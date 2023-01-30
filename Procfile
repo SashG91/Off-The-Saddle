@@ -1,1 +1,1 @@
-web: gunicorn Off-The-Saddle.wsgi
+web: gunicorn off-the-saddle.wsgi
