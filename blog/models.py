@@ -31,6 +31,18 @@ class Post(models.Model):
         null=False
     )
 
+    CLIMB_SURFACE_CHOICES = [
+        ("ASPHALT", "A purely asphalt surface"),
+        ("ASPHALTCOBBLED", "A combination of asphalt and cobble surface"),
+    ]
+
+    climb_surface = models.CharField(
+        max_length=250,
+        choices=CLIMB_SURFACE_CHOICES,
+        default="1",
+        null=False
+    )
+
     class Meta:
         ordering = ["-created_on"]
 
