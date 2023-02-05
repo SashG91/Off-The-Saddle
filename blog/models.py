@@ -18,7 +18,19 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
-    
+    CLIMB_DIFFICULTY_CHOICES = [
+        ("1", "A moderate ascend that can be challenging (weather and pace influence!)"),
+        ("2", "For those who are starting to take it seriously"), 
+        ("3", "An absolute beast that requires you to give it all you've got"),
+    ]
+
+    climb_difficulty = models.CharField(
+        max_length=250,
+        choices=CLIMB_DIFFICULTY_CHOICES,
+        default="1",
+        null=False
+    )
+
     class Meta:
         ordering = ["-created_on"]
 
