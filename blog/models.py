@@ -19,7 +19,7 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     CLIMB_DIFFICULTY_CHOICES = [
-        ("1", "A moderate ascend that can be challenging (weather and pace influence!)"),
+        ("1", "A moderate ascend that can get challenging, weather and pace affect!"),
         ("2", "For those who are starting to take it seriously"), 
         ("3", "An absolute beast that requires you to give it all you've got"),
     ]
@@ -41,6 +41,12 @@ class Post(models.Model):
         choices=CLIMB_SURFACE_CHOICES,
         default="1",
         null=False
+    )
+
+    climb_length = models.DecimalField(
+        null=True,
+        decimal_places=1,
+        max_digits=5,
     )
 
     class Meta:
