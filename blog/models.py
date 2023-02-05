@@ -49,6 +49,12 @@ class Post(models.Model):
         max_digits=5,
     )
 
+    climb_elevationgain = models.DecimalField(
+        null=True,
+        decimal_places=1,
+        max_digits=5,
+    )
+
     class Meta:
         ordering = ["-created_on"]
 
