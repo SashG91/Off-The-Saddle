@@ -4,6 +4,62 @@
 
 <div class="container-fluid">
     <div class="row">
+
+        <!-- blog post entries -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for climb in climb_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                <a href="{% url 'post_detail' climb.slug  %}">
+                                {% if "placeholder" in climb.featured_image.url %}
+                                <img class="card-img-top" alt="A picture of a road with mountains." src="../static/images/road_in_peak_district.jpeg">
+                                {% else %}
+                                <img class="card-img-top" alt="A picture of a feature road in the UK." src="../static/images/Road-in-the-UK.jpeg">
+                                {% endif %}
+                                </a>
+                                <div class="image-flash">
+                                    <p class="author">Author: {{ climb.author }}</p>
+                                </div>
+                            </div>
+                            <a href="{% url 'post_detail' climb.slug  %}" class="post-link">
+                                <h2 class="card-title">{{ climb.title }}</h2>
+                            </a>
+                            <p class="card-excerpt">{{ climb.excerpt }}</p>
+                            <p class="card-text card-icon"><i class="fa-brands fa-envira"></i>
+                                {{ climb.get_climb_difficulty_display }}.</p>
+                            <p class="card-text card-icon"><i class="fa-solid fa-sun"></i>
+                                {{ climb.get_climb_surface_display }}.</p>
+                            <p class="card-text card-icon"><i class="fa-solid fa-droplet"></i>
+                                {{ climb.climb_length }}/3</p>
+                            <p class="card-text card-icon"><i class="fa-solid fa-droplet"></i>
+                                    {{ climb.climb_elevation gain }}/3</p>
+                            <p class="card-text card-icon"><i class="fa-solid fa-droplet"></i>
+                                        {{ climb.climb_KOMQOM }}/3</p>
+                            <hr>
+                            <p class="card-text text-muted h6">{{ climb.created_on}}</p>
+                            <p class="card-icon">
+                                <!-- post likes count -->
+                                <span class="p-1"><i class="fa-solid fa-heart"></i> {{ climb.number_of_likes }}</span>
+                                <!-- post comments count -->
+                                {% with climb.comments.count as total_comments %}
+                                <span class="p-1"><i class="fa-solid fa-comment"></i> {{ total_comments }}</span>
+                                {% endwith %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
     
     {% if is_paginated %}
     <nav aria-label="Page navigation">
