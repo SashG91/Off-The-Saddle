@@ -75,6 +75,54 @@
             <hr>
         </div>
     </div>
+    <!-- comments section -->
+    <div class="container">
+        <div class="row">
+            <div class="card-container col-lg-8 mb-4 mt-3">
+                <h3>Comments:</h3>
+                <div>
+                    <!-- if there is at least one comment -->
+                    {% if comments %}
+                    <!-- for loop to iterate through comments -->
+                    {% for comment in comments %}
+                    <div class="comments">
+                        <!-- body of the comment -->
+                        <div>
+                            {{ comment.body | linebreaksbr }}
+                        </div>
+                        <div>
+                            <p class="post-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
+                                on <span>{{ comment.created_on }}</span>
+                            </p>
+                        </div>
+                        <div>
+                            {% if comment.name == request.user.username %}
+                            <div class="col-sm mt-1">
+                                <a class="btn btn-sm btn-edit"
+                                    href="{% url 'edit_comment' climb.slug comment.pk %}">Edit</a>
+                                <a class="btn btn-sm btn-edit"
+                                    href="{% url 'delete_comment' climb.slug comment.pk %}">Delete</a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- end of loop -->
+                    {% endfor %}
+                    <!-- else, if there is no comment -->
+                    {% else %}
+                    <p>Be the first to share your thoughts!</p>
+                    {% if not user.is_authenticated %}
+                    <p>To post a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
+                        <br> If you 
+                        have not registered an account, please <a class="link" href="{% url 'account_signup' %}">register</a>
+                        here.</p>
+                    {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="card-container col-lg-4 mb-4 mt-3 ">
+                {% if user.is_authenticated %}
 
 
 {% endblock content %}
