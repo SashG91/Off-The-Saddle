@@ -16,17 +16,25 @@
                 <p class="post-date">{{ climb.author }} | {{ climb.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in plant.featured_image.url %}
+                {% if "placeholder" in climb.featured_image.url %}
                 <img class="img-responsive" alt="A picture of a road across mountains."
                     src="../static/images/road_in_peak_district.jpeg">
                 {% else %}
                 <img class="img-responsive" alt="A picture of the featured climb post."
-                    src=" {{ plant.featured_image.url }}">
+                    src=" {{ climb.featured_image.url }}">
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
+<!-- climb post content -->
+<div class="container">
+    <div class="row">
+        <div class="col card mb-2">
+            <div class="card-body back-button">
+                <div class="card-text">{{ climb.content | safe }}</div>
+                <div>
+                    
 
 
 {% endblock content %}
