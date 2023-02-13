@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Post(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -20,7 +21,7 @@ class Post(models.Model):
 
     CLIMB_DIFFICULTY_CHOICES = [
         ("1", "A moderate ascend that can get challenging, weather and pace affect!"),
-        ("2", "For those who are starting to take it seriously"), 
+        ("2", "For those who are starting to take it seriously"),
         ("3", "An absolute beast that requires you to give it all you've got"),
     ]
 
@@ -55,6 +56,8 @@ class Post(models.Model):
         max_digits=5,
     )
 
+    ** ADD IN KOMQOM MODEL **
+
     class Meta:
         ordering = ["-created_on"]
 
@@ -64,6 +67,7 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
+        
 class Comment(models.Model):
     """
     Django model for the information storage
