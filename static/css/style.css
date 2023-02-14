@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* navigation */
+
+/* background colors */
+
+/* post-list card */
+
+/* post content */
+
+/* links and buttons */
+
+/* footer */
+
+/* media queries */
+
+/* small devices (mobile phones, less than 576px) */
+/* medium devices (tablets, less than 768px) */
+/* large devices (laptops, less than 992px) */
+/* extra large devices (desktops, less than 1200px) */
