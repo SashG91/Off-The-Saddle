@@ -23,6 +23,56 @@ h6 {
 
 /* links and buttons */
 
+.btn-signup,
+.btn-edit {
+    background-color: #f16c6b;
+    color: #F8FBEB;
+    margin: 2px;
+}
+
+.btn-signup:hover,
+.btn-edit:hover {
+    color: #F8FBEB;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.link {
+    color: #F8FBEB;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #F8FBEB;
+    text-decoration: underline;
+}
+
+.no-border,
+.btn-like i {
+    color: #F8FBEB;
+    border: none;
+    background: transparent;
+}
+
+.btn-like>i:hover {
+    color: #F8FBEB;
+    border: none;
+    background: transparent;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.card-body a {
+    color: #f16c6b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-button a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* footer */
 
 footer a {
@@ -48,7 +98,6 @@ footer {
 
 
 /* media queries */
-
 /* small devices (mobile phones, less than 576px) */
 /* medium devices (tablets, less than 768px) */
 /* large devices (laptops, less than 992px) */
