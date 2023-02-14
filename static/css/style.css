@@ -17,6 +17,19 @@ h6 {
 
 /* background colors */
 
+.light-bg {
+    background-color: #F8FBEB;
+}
+
+.dark-bg {
+    background-color: #b61614;
+}
+
+.main-bg {
+    background-color: #F8FBEB;
+}
+
+
 /* post-list card */
 
 .card {
