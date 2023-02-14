@@ -21,11 +21,51 @@ h6 {
 
 /* post content */
 
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #b61614;
+    color: #F8FBEB;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.post-title,
+.post-date,
+.plant-icon {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.post-icon i {
+    color: #F8FBEB
+}
+
+.comments {
+    padding: 10px;
+    margin: 10px;
+}
+
+.totals {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
 /* links and buttons */
 
 .btn-signup,
 .btn-edit {
-    background-color: #f16c6b;
+    background-color: #b61614;
     color: #F8FBEB;
     margin: 2px;
 }
@@ -63,7 +103,7 @@ h6 {
 }
 
 .card-body a {
-    color: #f16c6b;
+    color: #b61614;
     font-weight: bold;
     text-decoration: none;
 }
