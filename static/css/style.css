@@ -19,6 +19,45 @@ h6 {
 
 /* post-list card */
 
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #b61614;
+}
+
+.author {
+    color: #F8FBEB;
+    margin: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-icon i {
+    color: #0074d0;
+}
+
+.post-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #F8FBEB;
+}
+
+.post-link:hover,
+.page-link {
+    color: #F8FBEB;
+}
+
 /* post content */
 
 .masthead {
@@ -48,7 +87,7 @@ h6 {
 }
 
 .post-icon i {
-    color: #F8FBEB
+    color: #0074d0
 }
 
 .comments {
