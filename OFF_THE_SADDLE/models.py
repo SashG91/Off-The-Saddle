@@ -56,8 +56,6 @@ class Post(models.Model):
         max_digits=5,
     )
 
-    ** ADD IN KOMQOM MODEL **
-
     class Meta:
         ordering = ["-created_on"]
 
@@ -67,7 +65,7 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-        
+
 class Comment(models.Model):
     """
     Django model for the information storage
