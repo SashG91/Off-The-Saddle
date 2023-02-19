@@ -12,17 +12,87 @@ Sash Govender
 
 ## UX
 
+### Project Goal
+
+### User Stories
+* For admin users:
+
+* For sight users:
+
 ## DESIGN CHOICES
+
+### Colors
+
+### Typography
+
+### Images/Icons
+
+### Animations
+
+### Responsiveness
 
 ## WIREFRAMES
 
+### Post List
+
+### Post Detail
+
 ## APP FEATURES / STRUCTURE
+
+### Navigation
+
+### Climb List
+
+### Climb List
+
+### Likes
+
+### Comments
+
+### Login/Logout 
+
+### Footer
+
+### Error 404/403/500
+
+### Features for Future Development
 
 ## DATA MODEL
 
+- [X] C - Site users can 
+- [X] R - Site users can 
+- [X] U - Site users can 
+- [X] D - Site users can 
+
+- [X] C - Site users can 
+- [X] R - Site users can 
+- [X] U - Site users are able to
+- [X] D - Site users are able to
+
 ## TESTING
 
+### Validation Testing
+- HTML
+
+- CSS
+
+- JavaScript
+
+### Cross Browser / Device Testing
+
+### Manual Testing
+
+### Automatic Testing
+
+### Defects of Note
+
+### Outstanding Defects
+
 ## ACCESSIBILITY
+
+### Lighthouse Audit
+
+### Keyboard Navigation
 
 ## DEPLOYMENT PROCESS
 
