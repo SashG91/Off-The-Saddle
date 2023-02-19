@@ -7,17 +7,22 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Climb(models.Model):
+    """
+    Django model for the information stored
+    about each plant type.
+    """
+
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts")
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
+    created_on = models.DateField(auto_now_add=True)
+    updated_on = models.DateField(auto_now=True)
     featured_image = CloudinaryField('image', default='placeholder')
+    content = models.TextField()
     excerpt = models.TextField(blank=True)
-    status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+    status = models.IntegerField(choices=STATUS, default=0)
 
     CLIMB_DIFFICULTY_CHOICES = [
         ("1", "An ascend that can get challenging, weather and pace affect!"),
@@ -71,7 +76,7 @@ class Comment(models.Model):
     Django model for the information storage
     of every comment.
     """
-    post = models.ForeignKey(
+    climb = models.ForeignKey(
         Climb, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
