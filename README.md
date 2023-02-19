@@ -13,6 +13,7 @@ Sash Govender
 ## UX
 
 ### Project Goal
+* The aim of the project is to provide a space that provides information for a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in The UK.
 
 ### User Stories
 * For admin users:
@@ -22,40 +23,59 @@ Sash Govender
 ## DESIGN CHOICES
 
 ### Colors
+- 
 
 ### Typography
+- 
 
 ### Images/Icons
+- 
 
 ### Animations
+- 
 
 ### Responsiveness
+- 
 
 ## WIREFRAMES
 
 ### Post List
+- 
 
 ### Post Detail
+- 
 
 ## APP FEATURES / STRUCTURE
 
 ### Navigation
+- 
 
 ### Climb List
+- 
 
-### Climb List
+### Climb Detail
+- 
 
 ### Likes
+- 
 
 ### Comments
+-
+
+### Register 
+-
 
 ### Login/Logout 
+-
 
 ### Footer
+-
 
 ### Error 404/403/500
+-
 
 ### Features for Future Development
+-
 
 ## DATA MODEL
 
@@ -72,6 +92,7 @@ Sash Govender
 ## TESTING
 
 ### Validation Testing
+
 - HTML
 
 - CSS
@@ -79,27 +100,44 @@ Sash Govender
 - JavaScript
 
 ### Cross Browser / Device Testing
+-
 
 ### Manual Testing
+-
 
 ### Automatic Testing
+-
 
 ### Defects of Note
+-
 
 ### Outstanding Defects
+-
 
 ## ACCESSIBILITY
 
 ### Lighthouse Audit
+-
 
 ### Keyboard Navigation
+-
 
 ## DEPLOYMENT PROCESS
+**Step 1:**
+**Step 2:**
+**Step 3:**
+**Step 4:**
+**Step 5:**
+**Step 6:**
 
 ## TECHNOLOGIES USED
+-
 
 ## CREDITS
+-
 
 ## MEDIA
+-
 
 ## ACKNOWLEDGEMENTS
+-
