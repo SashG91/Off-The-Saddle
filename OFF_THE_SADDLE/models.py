@@ -20,7 +20,7 @@ class Climb(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     CLIMB_DIFFICULTY_CHOICES = [
-        ("1", "A moderate ascend that can get challenging, weather and pace affect!"),
+        ("1", "An ascend that can get challenging, weather and pace affect!"),
         ("2", "For those who are starting to take it seriously"),
         ("3", "An absolute beast that requires you to give it all you've got"),
     ]
