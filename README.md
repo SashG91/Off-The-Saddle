@@ -17,6 +17,12 @@ Sash Govender
 
 ### User Stories
 * For admin users:
+1. In order to **control and create the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
+2. In order to **maintain a friendly community atmospherefor the blog** as an **admin user**, **I can approve/remove comments.**
+3. In order to **finish writing or publishing content later** as an **admin user**, **I can create sample / draft posts.**
+4. In order to **maintain the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
+
+Have the ability to maintain the blog content as an admin user, I can create, read, update and delete all posts.
 
 * For sight users:
 5. As a **site user**, I can register an account so that I can interact with the posts.
