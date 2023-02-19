@@ -120,7 +120,7 @@ Sash Govender
 -
 
 ### Keyboard Navigation
--
+- The users has the ability to use the tab button to navigate the website if required.
 
 ## DEPLOYMENT PROCESS
 **Step 1:**
