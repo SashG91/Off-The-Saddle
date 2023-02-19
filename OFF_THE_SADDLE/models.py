@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
-class Post(models.Model):
+class Climb(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -72,7 +72,7 @@ class Comment(models.Model):
     of every comment.
     """
     post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name="comments")
+        Climb, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
