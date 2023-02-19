@@ -131,7 +131,17 @@ Sash Govender
 **Step 6:**
 
 ## TECHNOLOGIES USED
--
+- GitPod
+- GitHub
+- Django
+- Bootstrap
+- Cloudinary
+- Summernote
+- Crispy Forms
+- Heroku
+- Balsamiq
+- Fontawesome
+- Favicon
 
 ## CREDITS
 -
