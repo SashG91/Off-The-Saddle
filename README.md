@@ -144,7 +144,10 @@ Sash Govender
 - Favicon
 
 ## CREDITS
--
+- The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted and guided in the setup and basic structure of this project.
+- Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
+- The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments as well as the messaging alerts.
+- The blog content was written with help from the following websites [here](https://www.pedalsure.com/blog/5-hardest-climbs-in-the-uk) and [here](https://cyclinguphill.com/100-climbs/shibden-wall/)
 
 ## MEDIA
 - The fonts were chosen with guidance from
