@@ -9,7 +9,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Climb(models.Model):
     """
     Django model for the information stored
-    about each plant type.
+    about each climb type.
     """
 
     title = models.CharField(max_length=250, unique=True)
@@ -76,7 +76,7 @@ class Comment(models.Model):
     Django model for the information storage
     of every comment.
     """
-    climb = models.ForeignKey(
+    post = models.ForeignKey(
         Climb, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
