@@ -147,7 +147,11 @@ Sash Govender
 -
 
 ## MEDIA
--
+- The fonts were chosen with guidance from
+- The colors for the website was generated using 
+- The climb images were sourced using
+- The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
+- The favicon image was converted using [Favicon.io](https://favicon.io/).
 
 ## ACKNOWLEDGEMENTS
 - Thank you to my mentor Malia for always helping and providing feedback and support throughout the project process.
