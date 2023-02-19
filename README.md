@@ -150,4 +150,6 @@ Sash Govender
 -
 
 ## ACKNOWLEDGEMENTS
--
+- Thank you to my mentor Malia for always helping and providing feedback and support throughout the project process.
+- The Code Institute Slack community for tips, guidance and motivation.
+- The tutors at Code Institute for their patience and support.
