@@ -19,6 +19,19 @@ Sash Govender
 * For admin users:
 
 * For sight users:
+5. As a **site user**, I can register an account so that I can interact with the posts.
+6. As a **site user**, I can view a list of climb posts so that I can select one that interests me.
+7. As a **site user**, I can click on a post so that I can read the full write-up of each climb post.
+8. As a **site user**, I can view the number of likes on each post so that I can see which climbs are most popular among visitors.
+9. As a **site user**, I can like a post so that I can engage with the content.
+10. As a **site user**, I can view all comments on a post so that I can read other users impressions.
+11. As a **site user**, I can leave comments on a post so that I can share my own thoughts or experience.
+12. As a **site user**, I can edit and delete my comments on a post so that I can customise or remove my thoughts if desired.
+13. As a **site user**, I can return to safety of the blog home page, so that I am diverted away from any loading errors should they arise.
+14. As a **site user**, I can filter according to climb difficulty so that I can find the climbs that may be appropriate for me.
+15. As a **site user**, I can favourite/save a climb I am interested in so that I can easily find ideas for future outings.
+16. As a **site user**, I can rate blog posts on a scale of 1-5 so that I can give feedback about which posts I find valuable.
+
 
 ## DESIGN CHOICES
 
