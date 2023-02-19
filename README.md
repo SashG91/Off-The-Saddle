@@ -13,7 +13,7 @@ Sash Govender
 ## UX
 
 ### Project Goal
-* The aim of the project is to provide a space that provides information for a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in The UK.
+* The aim of the project is to provides a platform that hosts a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in The UK and share their experiences with other users.
 
 ### User Stories
 * For admin users:
