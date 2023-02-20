@@ -3,48 +3,48 @@
 {% load crispy_forms_tags %}
 
 <div class="masthead">
-    <!-- post blog summary card -->
+    <!-- climb blog summary card -->
     <div class="container">
         <div class="row g-0 summary-card">
             <div class="col-md-6 masthead-text">
-                <h2 class="post-title">{{ post.title }}</h2>
-                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i> {{ post.get_climb_difficulty_display }}.</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ post.get_climb_surface_display }}.</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-tape"></i> {{ post.climb_length }}/3</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ post.climb_elevationgain }}/3</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-crown"></i> {{ post.climb_KOMQOM }}/3</p>
-                <p class="post-date">{{ post.author }} | {{ post.created_on }}</p>
+                <h2 class="climb-title">{{ climb.title }}</h2>
+                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i> {{ climb.get_climb_difficulty_display }}.</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ climb.get_climb_surface_display }}.</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-tape"></i> {{ climb.climb_length }}/3</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ climb.climb_elevationgain }}/3</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-crown"></i> {{ climb.climb_KOMQOM }}/3</p>
+                <p class="climb-date">{{ climb.author }} | {{ climb.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.featured_image.url %}
+                {% if "placeholder" in climb.featured_image.url %}
                 <img class="img-responsive" alt="A picture of a road across mountains."
                     src="../static/images/road_in_peak_district.jpeg">
                 {% else %}
-                <img class="img-responsive" alt="A picture of the featured climb post."
-                    src=" {{ post.featured_image.url }}">
+                <img class="img-responsive" alt="A picture of the featured climb."
+                    src=" {{ climb.featured_image.url }}">
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-<!-- post content -->
+<!-- climb content -->
 <div class="container">
     <div class="row">
         <div class="col card mb-2">
             <div class="card-body back-button">
-                <div class="card-text">{{ post.content | safe }}</div>
+                <div class="card-text">{{ climb.content | safe }}</div>
                 <div>
-                    <!-- post likes counter -->
+                    <!-- climb likes counter -->
                     {% if user.is_authenticated %}
                     <div>
                         <span class="totals">YOUR OPINION:</span>
-                        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                        <form class="d-inline" action="{% url 'climb_like' climb.slug %}" method="POST">
                             {% csrf_token %}
                             {% if liked %}
-                            <button type="submit" name="blogpost_id" value="{{post.slug}}"
+                            <button type="submit" name="blogpost_id" value="{{climb.slug}}"
                                 class="btn-like no-border"><i class="fa-solid fa-heart"></i></button>
                             {% else %}
-                            <button type="submit" name="blogpost_id" value="{{post.slug}}"
+                            <button type="submit" name="blogpost_id" value="{{climb.slug}}"
                                 class="btn-like no-border"><i class="fa-regular fa-heart"></i></button>
                             {% endif %}
                         </form>
@@ -53,9 +53,9 @@
                     <div>
                         <span class="totals">TOTAL LIKES:</span>
                         <span class="btn-like no-border"><i class="fa-solid fa-heart"></i></span>
-                        <span>{{ post.number_of_likes }} </span>
+                        <span>{{ climb.number_of_likes }} </span>
                     </div>
-                    <!-- post comments count -->
+                    <!-- climb comments count -->
                     <div>
                         <span class="totals">TOTAL COMMENTS:</span>
                         {% with comments.count as total_comments %}
@@ -91,7 +91,7 @@
                             {{ comment.body | linebreaksbr }}
                         </div>
                         <div>
-                            <p class="post-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
+                            <p class="climb-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
                                 on <span>{{ comment.created_on }}</span>
                             </p>
                         </div>
@@ -99,9 +99,9 @@
                             {% if comment.name == request.user.username %}
                             <div class="col-sm mt-1">
                                 <a class="btn btn-sm btn-edit"
-                                    href="{% url 'edit_comment' post.slug comment.pk %}">Edit</a>
+                                    href="{% url 'edit_comment' climb.slug comment.pk %}">Edit</a>
                                 <a class="btn btn-sm btn-edit"
-                                    href="{% url 'delete_comment' post.slug comment.pk %}">Delete</a>
+                                    href="{% url 'delete_comment' climb.slug comment.pk %}">Delete</a>
                             </div>
                             {% endif %}
                         </div>
@@ -113,7 +113,7 @@
                     {% else %}
                     <p>Be the first to share your thoughts!</p>
                     {% if not user.is_authenticated %}
-                    <p>To post a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
+                    <p>To climb a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
                         <br> If you 
                         have not registered an account, please <a class="link" href="{% url 'account_signup' %}">register</a>
                         here.</p>
