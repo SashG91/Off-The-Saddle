@@ -5,46 +5,46 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- blog post entries -->
+        <!-- blog climb entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for post in climb_list %}
+                {% for climb in climb_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <a href="{% url 'post_detail' post.slug  %}">
-                                {% if "placeholder" in post.featured_image.url %}
+                                <a href="{% url '#' climb.slug  %}">
+                                {% if "placeholder" in climb.featured_image.url %}
                                 <img class="card-img-top" alt="A picture of a road across mountains." src="../static/images/road_in_peak_district.jpeg">
                                 {% else %}
                                 <img class="card-img-top" alt="A picture of a road climb in the UK." src="{{ post.featured_image.url}}">
                                 {% endif %}
                                 </a>
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
+                                    <p class="author">Author: {{ climb.author }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
+                            <a href="{% url '#' climb.slug  %}" class="climb-link">
+                                <h2 class="card-title">{{ climb.title }}</h2>
                             </a>
-                            <p class="card-excerpt">{{ post.excerpt }}</p>
+                            <p class="card-excerpt">{{ climb.excerpt }}</p>
                             <p class="card-text card-icon"><i class="fa-solid fa-bolt"></i>
-                                {{ post.get_climb_difficulty_display }}.</p>
+                                {{ climb.get_climb_difficulty_display }}.</p>
                             <p class="card-text card-icon"><i class="fa-solid fa-road"></i>
-                                {{ post.get_climb_surface_display }}.</p>
+                                {{ climb.get_climb_surface_display }}.</p>
                             <p class="card-text card-icon"><i class="fa-solid fa-tape"></i>
-                                {{ post.climb_length }}/3</p>
+                                {{ climb.climb_length }}/3</p>
                             <p class="card-text card-icon"><i class="fa-solid fa-mountains"></i>
-                                    {{ post.climb_elevationgain }}/3</p>
+                                    {{ climb.climb_elevationgain }}/3</p>
                             <p class="card-text card-icon"><i class="fa-solid fa-crown"></i>
-                                        {{ post.climb_KOMQOM }}/3</p>
+                                        {{ climb.climb_KOMQOM }}/3</p>
                             <hr>
-                            <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                            <p class="card-text text-muted h6">{{ climb.created_on}}</p>
                             <p class="card-icon">
-                                <!-- post likes count -->
-                                <span class="p-1"><i class="fa-solid fa-heart"></i> {{ post.number_of_likes }}</span>
-                                <!-- post comments count -->
-                                {% with post.comments.count as total_comments %}
+                                <!-- climb likes count -->
+                                <span class="p-1"><i class="fa-solid fa-heart"></i> {{ climb.number_of_likes }}</span>
+                                <!-- climb comments count -->
+                                {% with climb.comments.count as total_comments %}
                                 <span class="p-1"><i class="fa-solid fa-comment"></i> {{ total_comments }}</span>
                                 {% endwith %}
                             </p>
