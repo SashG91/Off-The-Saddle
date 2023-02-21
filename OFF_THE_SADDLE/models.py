@@ -30,7 +30,7 @@ class Climb(models.Model):
         ("3", "An absolute beast that requires you to give it all you've got"),
     ]
 
-    climb_difficulty = models.CharField(
+    climb_Difficulty = models.CharField(
         max_length=250,
         choices=CLIMB_DIFFICULTY_CHOICES,
         default="1",
@@ -42,20 +42,20 @@ class Climb(models.Model):
         ("ASPHALTCOBBLED", "A combination of asphalt and cobble surface"),
     ]
 
-    climb_surface = models.CharField(
+    climb_Surface = models.CharField(
         max_length=250,
         choices=CLIMB_SURFACE_CHOICES,
         default="1",
         null=False
     )
 
-    climb_length_in_miles = models.DecimalField(
+    climb_Length_in_miles = models.DecimalField(
         null=True,
         decimal_places=1,
         max_digits=5,
     )
 
-    climb_elevationgain_in_meters = models.DecimalField(
+    climb_Elevationgain_in_meters = models.DecimalField(
         null=True,
         decimal_places=1,
         max_digits=5,
