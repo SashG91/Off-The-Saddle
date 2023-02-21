@@ -13,9 +13,9 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <a href="{% url 'climb' climb.slug  %}">
+                                <a href="{% url 'climb_detail' climb.slug  %}">
                                 {% if "placeholder" in climb.featured_image.url %}
-                                <img class="card-img-top" alt="A picture of a road across mountains." src="../static/images/Bealach na Bà.jpg">
+                                <img class="card-img-top" alt="A picture of a road across mountains." src="../static/images/road_in_peak_district.jpeg">
                                 {% else %}
                                 <img class="card-img-top" alt="A picture of a road climb in the UK." src="{{ post.featured_image.url}}">
                                 {% endif %}
@@ -25,7 +25,7 @@
                                     <p>Image source Pedalsure and Cyclinguphill.</p>
                                 </div>
                             </div>
-                            <a href="{% url 'climb' climb.slug  %}" class="climb-link">
+                            <a href="{% url 'climb_detail' climb.slug  %}" class="climb-link">
                                 <h2 class="card-title">{{ climb.title }}</h2>
                             </a>
                             <p class="card-excerpt">{{ climb.excerpt }}</p>
