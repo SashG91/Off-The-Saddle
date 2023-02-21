@@ -22,6 +22,7 @@
                                 </a>
                                 <div class="image-flash">
                                     <p class="author">Author: {{ climb.author }}</p>
+                                    <p>Image source Pedalsure and Cyclinguphill.</p>
                                 </div>
                             </div>
                             <a href="{% url '#' climb.slug  %}" class="climb-link">
@@ -57,7 +58,7 @@
                 {% endif %}
                 {% empty %}
                     <h2>UNDER CONSTRUCTION</h2>
-                    <P>Sorry, no climbs are in the system as yet. Our admin team is currently assessing the issue and hopefully our data will be back shortly.</P>
+                    <p>Sorry, no climbs are in the system as yet. Our admin team is currently assessing the issue and hopefully our data will be back shortly.</p>
                 {% endfor %}
 
             </div>
