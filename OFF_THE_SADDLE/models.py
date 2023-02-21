@@ -49,16 +49,22 @@ class Climb(models.Model):
         null=False
     )
 
-    climb_length = models.DecimalField(
+    climb_length_in_miles = models.DecimalField(
         null=True,
         decimal_places=1,
         max_digits=5,
     )
 
-    climb_elevationgain = models.DecimalField(
+    climb_elevationgain_in_meters = models.DecimalField(
         null=True,
         decimal_places=1,
         max_digits=5,
+    )
+
+    climb_KOMQOM_in_minutes = models.CharField(
+        max_length=250,
+        default="1",
+        null=False
     )
 
     class Meta:
