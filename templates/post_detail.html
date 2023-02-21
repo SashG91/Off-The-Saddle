@@ -8,11 +8,11 @@
         <div class="row g-0 summary-card">
             <div class="col-md-6 masthead-text">
                 <h2 class="climb-title">{{ climb.title }}</h2>
-                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i> {{ climb.get_climb_difficulty_display }}.</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ climb.get_climb_surface_display }}.</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-tape"></i> {{ climb.climb_length }}/3</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ climb.climb_elevationgain }}/3</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-crown"></i> {{ climb.climb_KOMQOM }}/3</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i> {{ climb.get_climb_difficulty_display }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ climb.get_climb_surface_display }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-tape"></i> {{ climb.climb_length }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ climb.climb_elevationgain }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-crown"></i> {{ climb.climb_KOMQOM }}</p>
                 <p class="climb-date">{{ climb.author }} | {{ climb.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
