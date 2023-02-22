@@ -61,7 +61,7 @@ class Climb(models.Model):
         null=False
     )
 
-    climb_KOMQOMtime = models.CharField(
+    climb_KOMQOM = models.CharField(
         max_length=250,
         default="1",
         null=False
