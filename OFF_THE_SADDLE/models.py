@@ -49,23 +49,18 @@ class Climb(models.Model):
         null=False
     )
 
-    climb_Length_in_miles = models.DecimalField(
-        null=True,
+    climb_Length = models.DecimalField(
+        null=False,
         decimal_places=1,
         max_digits=5,
     )
 
-    climb_Elevationgain_in_meters = models.DecimalField(
-        null=True,
+    climb_Elevationgain = models.DecimalField(
+        null=False,
         decimal_places=1,
         max_digits=5,
     )
 
-    climb_KOMQOM_in_minutes = models.CharField(
-        max_length=250,
-        default="1",
-        null=False
-    )
 
     class Meta:
         ordering = ["-created_on"]
@@ -76,6 +71,13 @@ class Climb(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
+class RideTime(models.Model):
+    """
+    Track time users take for a climb
+    """
+    climb = models.ForeignKey(Climb, on_delete=models.CASCADE, related_name="climb")
+    rider = models.ForeignKey(User, on_delete=models.CASCADE, related_name='rider')
+    time = models.DurationField()
 
 class Comment(models.Model):
     """

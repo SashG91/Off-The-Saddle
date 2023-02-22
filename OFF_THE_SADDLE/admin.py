@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Climb, Comment
+from .models import Climb, Comment, RideTime
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -23,3 +23,8 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+@admin.register(RideTime)
+class RideTimeAdmin(admin.ModelAdmin):
+
+    list_display = ('rider', 'climb', 'time')
