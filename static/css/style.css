@@ -31,7 +31,7 @@ body {
 
 .card {
     border: none;
-    background-color: #F9FAFC;
+    background-color: #445261;
 }
 
 .image-container {
@@ -63,7 +63,7 @@ body {
 
 .masthead-text {
     background-color: #445261;
-    color: #445261;
+    color: #F9FAFC;
     position: relative;
 }
 
