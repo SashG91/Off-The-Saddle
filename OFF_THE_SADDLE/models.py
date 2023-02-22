@@ -55,13 +55,13 @@ class Climb(models.Model):
         max_digits=5,
     )
 
-    climb_Elevationgain = models.CharField(
-        max_length=250,
-        default="1",
-        null=False
+    climb_Elevationgain = models.DecimalField(
+        null=True,
+        decimal_places=1,
+        max_digits=5,
     )
 
-    climb_KOMQOM = models.CharField(
+    climb_KOMQOM_in_minutes = models.CharField(
         max_length=250,
         default="1",
         null=False
