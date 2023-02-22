@@ -55,7 +55,7 @@ class Climb(models.Model):
         max_digits=5,
     )
 
-    climb_Elevationgain = models.DecimalField(
+    climb_Elevationgain_in_meters = models.DecimalField(
         null=True,
         decimal_places=1,
         max_digits=5,
