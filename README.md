@@ -108,17 +108,17 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ## DATA MODEL
 [INSERT SCREENSHOTS HERE]
 
-- [X] C - Site users can create/register their own account to interact with the climb posts.
-- [X] R - Site users can 
-- [X] U - Site users can 
-- [X] D - Site users can 
+- [X] C - Site users can create/register an account to interact with the climb posts.
+- [X] R - Site users can open and read the climb posts and read comments from other users.
+- [X] U - Site users can like a post, updating the details and analytics for a post.
+- [X] D - Site users can retract their like if desired on a climb post.
 
 [INSERT SCREENSHOTS HERE]
 
-- [X] C - Site users can 
-- [X] R - Site users can 
-- [X] U - Site users are able to
-- [X] D - Site users are able to
+- [X] C - Site users can create comments using a form on each climb post.
+- [X] R - Site users can read comments from other users.
+- [X] U - Site users are able to update/edit their comments via a form.
+- [X] D - Site users are able to delete their comments.
 
 ## TESTING
 
