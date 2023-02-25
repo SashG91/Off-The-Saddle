@@ -81,6 +81,9 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ### Comments
 -
 
+### RideTime
+-
+
 ### Register 
 -
 
@@ -88,20 +91,29 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 -
 
 ### Footer
--
+- The footer links directly to the social media pages of the cycle climb blog.
+- There is a subtle hover state on each icon for better user experience.
 
 ### Error 404/403/500
--
+- There are error pages in place in case a user is taken to a restricted area or the page does not exist.
+- If the user clicks the home button they will be taken back to the blog list page.
+[INSERT SCREENSHOTS HERE]
 
 ### Features for Future Development
--
+- Once the site contains many lists of posts it will be less time consuming to all the user to use the search bar to quickly search for a climb by area to find a climb that interests them.
+- Users will benefit from being able to 'save' blog posts so that users can plan future rides in specific regions.
+- Users will be able to see where their RideTime for a climb segment is ranked according to other users on the same climb in a leaderboard for this blog.
+- Comments that are in pending state can be added so users are aware they are awaiting approval from the admin.
 
 ## DATA MODEL
+[INSERT SCREENSHOTS HERE]
 
 - [X] C - Site users can 
 - [X] R - Site users can 
 - [X] U - Site users can 
 - [X] D - Site users can 
+
+[INSERT SCREENSHOTS HERE]
 
 - [X] C - Site users can 
 - [X] R - Site users can 
