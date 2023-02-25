@@ -51,10 +51,12 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - 
 
 ### Animations
-- 
+- The navbar, social icons and buttons across the site have a subtle grow effect when hovered over by the user.
+- All links have a color change and underlined effect when hovered for clear distinction from the body text.
 
 ### Responsiveness
-- 
+- The website was designed mobile-first using flexbox to ensure responsiveness throughout the website.
+- The standard grid from Bootstrap was used to achieve this.
 
 ## WIREFRAMES
 
