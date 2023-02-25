@@ -61,11 +61,13 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ### Climb List
 - The climb list page was designed using cards to show a quick summary of each climb write-up.
 - The user has the ability to click and find out more about each climb.
+
 [INSERT WIREFRAME SCREENSHOT HERE]
 
 ### Climb Detail
 - Each blog post provides details about the climb such as difficulty, surface, distance and elevation gain.
 - The registered user can also comment, like and include their segment time for each climb.
+
 [INSERT WIREFRAME SCREENSHOT HERE]
 
 ## APP FEATURES / STRUCTURE
@@ -80,27 +82,69 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - The image and title are linked, so users may click on either and be taken to the climb.
 - There is a hover state on the title to show the user they can click on the post.
 - This summary card is later repeated in each climb detail post for continuity across the site.
+
 [INSERT SCREENSHOTS HERE]
 
 ### Climb Detail
 - Each climb post has an article about the climb.
 - The structure of each post is consistent, starting with the card at the top and excerpt from the climb list and then the main content.
+
 [INSERT SCREENSHOTS HERE]
 
 ### Likes
-- 
+- Should a user not be logged in, they will see the below information:
+
+[INSERT SCREENSHOTS HERE]
+
+- Should the user be logged in, they will be able to like the post:
+
+[INSERT SCREENSHOTS HERE]
+
+- The user is then able to easily return to the home page using the go back button or clicking the bicycle logo at the top of the page.
 
 ### Comments
--
+- If a post doesn't have any comments, the user will see the below if not logged in:
+
+[INSERT SCREENSHOTS HERE]
+
+- A logged in user, will be encouraged to share their experience if they have completed a featured climb.
+
+[INSERT SCREENSHOTS HERE]
+
+- The user will be able to edit their comment and RideTime using a form and be alerted using a message that disappears after several seconds.
+- The user will be able to delete their comment after being prompted and allowed to go back if desired or will proceed and receive a success message:
+
+[INSERT SCREENSHOTS HERE]
+
+[INSERT SCREENSHOTS HERE]
 
 ### RideTime
--
+- If a post doesn't have any times submitted, the user will see the below if not logged in:
+
+[INSERT SCREENSHOTS HERE]
+
+- A logged in user, will be encouraged to input their RideTime for the climb segment if they have completed it.
+
+[INSERT SCREENSHOTS HERE]
 
 ### Register 
--
+- The user will be able to easily sign up as a user using the below form.
+- Should user already be registered, there is a link to easily navigate to login instead
+
+[INSERT SCREENSHOTS HERE]
 
 ### Login/Logout 
--
+- The users can easily sign in using the below form with an option to 'remember me' if desired.
+- If a user hasn't registered, there is a link to easily navigate to sign up instead.
+
+[INSERT SCREENSHOTS HERE]
+
+- The user is prompted with a message before logging out:
+
+[INSERT SCREENSHOTS HERE]
+
+- The user will receive a message that disappears after 3 seconds to say they have logged in/logged out:
+[INSERT SCREENSHOTS HERE]
 
 ### Footer
 - The footer links directly to the social media pages of the cycle climb blog.
@@ -109,6 +153,7 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ### Error 404/403/500
 - There are error pages in place in case a user is taken to a restricted area or the page does not exist.
 - If the user clicks the home button they will be taken back to the blog list page.
+
 [INSERT SCREENSHOTS HERE]
 
 ### Features for Future Development
