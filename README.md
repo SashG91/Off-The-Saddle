@@ -191,7 +191,7 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 -
 
 ### Manual Testing
--
+- You can view manual testing of the website [here]
 
 ### Automatic Testing
 - Manual testing was done due to time constraints.
@@ -211,12 +211,42 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - The users has the ability to use the tab button to navigate the website if required.
 
 ## DEPLOYMENT PROCESS
-**Step 1:**
-**Step 2:**
-**Step 3:**
-**Step 4:**
-**Step 5:**
+**Step 1:** Open a new app in Heroku, choose a unique name and region.
+**Step 2:** Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
+**Step 3:** Return to the dashboard and copy the database URL:
+[INSERT SCREENSHOT HERE]
+
+**Step 4:** Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
+[INSERT SCREENSHOT HERE]
+
+**Step 5:** Include a secret key in the variables:
+[INSERT SCREENSHOT HERE]
+
 **Step 6:**
+Include the below code to settings.py file:
+[INSERT SCREENSHOT HERE]
+
+**Step 7:** Link the database in settings.py and migrate then push to GitHub:
+[INSERT SCREENSHOT HERE]
+
+**Step 8:** In Heroku, add three config vars:
+[INSERT SCREENSHOT HERE]
+
+**Step 9:** Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
+[INSERT SCREENSHOT HERE]
+
+**Step 10:** Add cloudinary to installed apps in settings.py, add static/media file settings:
+[INSERT SCREENSHOT HERE]
+
+**Step 11:** Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
+[INSERT SCREENSHOT HERE]
+
+**Step 12:** Create a Procfile, then commit and push to GitHub:
+[INSERT SCREENSHOT HERE]
+
+**Step 13:** Connect GitHub account in Heroku, connect and deploy branch. Open app and check:
+[INSERT SCREENSHOT HERE]
+
 
 ## TECHNOLOGIES USED
 - GitPod
