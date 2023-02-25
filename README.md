@@ -59,10 +59,14 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ## WIREFRAMES
 
 ### Post List
-- 
+- The post list page was designed using cards to show a quick summary of each climb write-up.
+- The user has the ability to click and find out more about each climb.
+[INSERT WIREFRAME SCREENSHOT HERE]
 
 ### Post Detail
-- 
+- Each blog post provides details about the climb such as difficulty, surface, elevation gain.
+- The registered user can also comment, like and include their segment time for each climb.
+[INSERT WIREFRAME SCREENSHOT HERE]
 
 ## APP FEATURES / STRUCTURE
 
