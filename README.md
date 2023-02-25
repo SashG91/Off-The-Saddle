@@ -137,7 +137,7 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 -
 
 ### Automatic Testing
--
+- Manual testing was done due to time constraints.
 
 ### Defects of Note
 -
