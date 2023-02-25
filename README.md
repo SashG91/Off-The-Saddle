@@ -1,7 +1,7 @@
 # OFF THE SADDLE - A COLLECTION OF UK CYCLE CLIMBS.
 
 ## Author
-Sash Govender
+Sashen Govender
 
 ## Project Overview
 *  The OFF THE SADDLE blog is a platform for cyclist of all ablities to visit and find out more about some of the most exciting and challenging cycle climbs in The UK who are either chasing their next King of the Mountain / Queen of the Mountain title.
@@ -58,26 +58,34 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 
 ## WIREFRAMES
 
-### Post List
-- The post list page was designed using cards to show a quick summary of each climb write-up.
+### Climb List
+- The climb list page was designed using cards to show a quick summary of each climb write-up.
 - The user has the ability to click and find out more about each climb.
 [INSERT WIREFRAME SCREENSHOT HERE]
 
-### Post Detail
-- Each blog post provides details about the climb such as difficulty, surface, elevation gain.
+### Climb Detail
+- Each blog post provides details about the climb such as difficulty, surface, distance and elevation gain.
 - The registered user can also comment, like and include their segment time for each climb.
 [INSERT WIREFRAME SCREENSHOT HERE]
 
 ## APP FEATURES / STRUCTURE
 
 ### Navigation
-- 
+- The users will see a home, login/logout & register button when visiting the site. 
+- There is a hover state on each of the navigation items for better user experience.
+- For mobile devices, the navigation will toggle to a hamburger menu.
 
 ### Climb List
-- 
+- The users will have a list of posts with a title, excerpt and summary card associated with each climb.
+- The image and title are linked, so users may click on either and be taken to the climb.
+- There is a hover state on the title to show the user they can click on the post.
+- This summary card is later repeated in each climb detail post for continuity across the site.
+[INSERT SCREENSHOTS HERE]
 
 ### Climb Detail
-- 
+- Each climb post has an article about the climb.
+- The structure of each post is consistent, starting with the card at the top and excerpt from the climb list and then the main content.
+[INSERT SCREENSHOTS HERE]
 
 ### Likes
 - 
