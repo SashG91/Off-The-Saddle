@@ -108,7 +108,7 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ## DATA MODEL
 [INSERT SCREENSHOTS HERE]
 
-- [X] C - Site users can 
+- [X] C - Site users can create/register their own account to interact with the climb posts.
 - [X] R - Site users can 
 - [X] U - Site users can 
 - [X] D - Site users can 
@@ -183,11 +183,11 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ## MEDIA
 - The fonts were chosen with guidance from
 - The colors for the website was generated using 
-- The climb images were sourced using
+- The climb images were sourced using cyclinguphill.com and pedalsure.
 - The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
 - The favicon image was converted using [Favicon.io](https://favicon.io/).
 
 ## ACKNOWLEDGEMENTS
-- Thank you to my mentor Malia for always helping and providing feedback and support throughout the project process.
+- Thank you to my mentor Malia for always helping and going above and beyond with providing feedback and support throughout the project process.
 - The Code Institute Slack community for tips, guidance and motivation.
 - The tutors at Code Institute for their patience and support.
