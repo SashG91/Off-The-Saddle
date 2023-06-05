@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['off-the-saddle.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-sashg91-offthesaddle-40wrqw7pcbw.ws-us98.gitpod.io', 'localhost']
+
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
