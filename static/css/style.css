@@ -5,10 +5,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.light-bg {
-    background-color: #F9FAFC;
-}
-
 .dark-bg {
     background-color: #445261;
 }
@@ -157,9 +153,12 @@ body {
 
 /* footer */
 
-footer p {
-    color: #C3D2E4;
+footer {
+    color:#C3D2E4;
+}
 
+.social-icons a {
+    color: red;
 }
 
 /* media queries */
