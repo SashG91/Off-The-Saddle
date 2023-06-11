@@ -31,7 +31,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-sashg91-offthesaddle-40wrqw7pcbw.ws-us98.gitpod.io', 'localhost']
+ALLOWED_HOSTS = [
+    'off-the-saddle.herokuapp.com',
+    'localhost',
+    '8000-sashg91-offthesaddle-40wrqw7pcbw.ws-us99.gitpod.io', 'localhost']
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -54,7 +57,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'OFF_THE_SADDLE',
-    
+
 ]
 
 SITE_ID = 1
@@ -63,12 +66,12 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 MESSAGE_TAGS = {
-        messages.DEBUG: 'alert-info',
-        messages.INFO: 'alert-info',
-        messages.SUCCESS: 'alert-success',
-        messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',
-    }
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
