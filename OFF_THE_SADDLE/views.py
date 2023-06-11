@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from .models import Climb, RideTime, Comment
 from django.views.generic import ListView
@@ -83,6 +83,18 @@ class ClimbDetail(SuccessMessageMixin, View):
             },
         )
 
+
+class PostLike(LoginRequiredMixin, View):
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Climb, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 # class AddClimbTime(CreateView): 
 #     """
