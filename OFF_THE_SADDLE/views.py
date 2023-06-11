@@ -8,6 +8,7 @@ from django.views.generic import DeleteView
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
 
+
 class ClimbList(generic.ListView):
     """
     Climb List View
@@ -26,5 +27,14 @@ class ClimbDetail(DetailView):
     template_name = 'climb_detail.html'
 
     def get_context_data(self, **kwargs):
-        context['ride_times'] = RideTime.objects.filter(climb=pk).order_by('-time')
+        context['ride_times'] = RideTime.objects.filter(
+            climb=pk).order_by('-time')
 
+class AddClimbTime(CreateView): 
+    """
+    Create Climb Time View
+    """
+    model = RideTime 
+    template_name = 'add_climb.html'
+    path('<slug:slug>/add_time', views.AddClimbTime.as_view(), name='add_time')
+    
