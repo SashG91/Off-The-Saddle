@@ -1,12 +1,16 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from .models import Climb, RideTime, Comment
-from django.views.generic import ListView
-from django.views.generic import DetailView
-from django.views.generic import UpdateView
-from django.views.generic import DeleteView
-from django.views.generic import CreateView
+from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView
+from django.views.generic import DeleteView, UpdateView
+from django.http import HttpResponseRedirect
+
+from django.views.generic import ListView, DetailView, CreateView
+
+
+from .forms import CommentForm, EditForm
 
 from django.contrib.messages.views import SuccessMessageMixin
 
@@ -31,9 +35,9 @@ class ClimbDetail(SuccessMessageMixin, View):
     template_name = 'climb_detail.html'
 
     def get(self, request, slug, *args, **kwargs):
-        queryset = Climb().objects.filter(status=1)
+        queryset = Climb.objects.filter(status=1)
         climb = get_object_or_404(queryset, slug=slug)
-        comments = plant.comments.filter(approved=True).order_by('created_on')
+        comments = climb.comments.filter(approved=True).order_by('created_on')
         liked = False
         if climb.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -75,7 +79,7 @@ class ClimbDetail(SuccessMessageMixin, View):
             request,
             "climb_detail.html",
             {
-                "climb": plant,
+                "climb": climb,
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
@@ -94,7 +98,7 @@ class PostLike(LoginRequiredMixin, View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('climb_detail', args=[slug]))
 
 # class AddClimbTime(CreateView): 
 #     """
@@ -103,3 +107,15 @@ class PostLike(LoginRequiredMixin, View):
 #     model = RideTime
 #     fields = ['time']
 #     template_name = 'add_climb.html'
+
+
+class Page403(TemplateView):
+    template_name = '403.html'
+
+
+class Page404(TemplateView):
+    template_name = '404.html'
+
+
+class Page500(TemplateView):
+    template_name = '500.html'

@@ -24,7 +24,7 @@
                                     <p class="author">Author: {{ climb.author }}</p>
                                 </div>
                             </div>
-                            <a class="card-title" href="#">
+                            <a class="card-title" href="{% url 'climb_detail' climb.slug %}">
                                 <h2 class="mt-2">{{ climb.title }}</h2>
                             </a>
                             <p class="card-excerpt">{{ climb.excerpt }}</p>
