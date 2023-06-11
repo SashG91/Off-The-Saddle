@@ -8,10 +8,13 @@
         <div class="row g-0 summary-card">
             <div class="col-md-6 masthead-text">
                 <h2 class="climb-title">{{ climb.title }}</h2>
-                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i> {{ climb.get_climb_difficulty_display }}</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ climb.get_climb_surface_display }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-bolt"></i>
+                    {{ climb.get_climb_difficulty_display }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-road"></i> {{ climb.get_climb_surface_display }}
+                </p>
                 <p class="card-text climb-icon"><i class="fa-solid fa-tape"></i> {{ climb.climb_length }}</p>
-                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ climb.climb_elevationgain }}</p>
+                <p class="card-text climb-icon"><i class="fa-solid fa-mountains"></i> {{ climb.climb_elevationgain }}
+                </p>
                 <p class="card-text climb-icon"><i class="fa-solid fa-crown"></i> {{ climb.climb_KOMQOM }}</p>
                 <p class="climb-date">{{ climb.author }} | {{ climb.created_on }}</p>
             </div>
@@ -114,9 +117,11 @@
                     <p>Be the first to share your thoughts!</p>
                     {% if not user.is_authenticated %}
                     <p>To climb a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
-                        <br> If you 
-                        have not registered an account, please <a class="link" href="{% url 'account_signup' %}">register</a>
-                        here.</p>
+                        <br> If you
+                        have not registered an account, please <a class="link"
+                            href="{% url 'account_signup' %}">register</a>
+                        here.
+                    </p>
                     {% endif %}
                     {% endif %}
                 </div>
@@ -139,3 +144,22 @@
 
 
 {% endblock content %}
+
+<!-- climb Times -->
+<div>
+    <span class="totals">CLIMBS:</span>
+    {% for climb_time in ride_times %}
+    {{climb_time.user }}: {{climb_time.time}}</br>
+    {% if climb_time.user == user %}
+    <button type="edit" class="btn btn-edit btn-md mt-2">Edit</button>
+    <button type="delete" class="btn btn-delete btn-md mt-2">Delete</button> <br />
+        {% endif %}
+    {% empty %}
+    Sorry, no ride times recorded yet
+    {% endfor %}
+</div>
+
+<!-- edit/delete/add climb time -->
+{% if user.is_authenticated %}
+<button type="add time" class="btn btn-add time btn-md mt-2">Add Time</button> 
+{% endif %}
