@@ -34,7 +34,7 @@ class AddClimbTime(CreateView):
     """
     Create Climb Time View
     """
-    model = RideTime 
+    model = RideTime
+    fields = ['time']
     template_name = 'add_climb.html'
     path('<slug:slug>/add_time', views.AddClimbTime.as_view(), name='add_time')
-    

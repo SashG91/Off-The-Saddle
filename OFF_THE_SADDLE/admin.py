@@ -25,6 +25,6 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 @admin.register(RideTime)
-class RideTime(admin.ModelAdmin):
+class RideTimeAdmin(admin.ModelAdmin):
 
     list_display = ('rider', 'climb', 'time')
