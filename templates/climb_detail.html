@@ -112,10 +112,10 @@
                         <div>
                             {% if comment.name == request.user.username %}
                             <div class="col-sm mt-1">
-                                <a class="btn btn-sm btn-edit"
-                                    href="{% url 'edit_comment' climb.slug comment.pk %}">Edit</a>
-                                <a class="btn btn-sm btn-edit"
-                                    href="{% url 'delete_comment' climb.slug comment.pk %}">Delete</a>
+                                <a class="btn btn-signup btn-sm"
+                                    href="#">Edit</a>
+                                <a class="btn btn-signup btn-sm"
+                                    href="#">Delete</a>
                             </div>
                             {% endif %}
                         </div>
@@ -152,8 +152,6 @@
         </div>
     </div>
 </div>
-
-
 {% endblock content %}
 
 <!-- climb Times -->
@@ -162,7 +160,7 @@
     {% for climb_time in ride_times %}
     {{climb_time.user }}: {{climb_time.time}}</br>
     {% if climb_time.user == user %}
-    <button type="edit" class="btn btn-edit btn-md mt-2">Edit</button>
+    <button type="edit" class="btn btn-md mt-2">Edit</button>
     <button type="delete" class="btn btn-delete btn-md mt-2">Delete</button> <br />
         {% endif %}
     {% empty %}
