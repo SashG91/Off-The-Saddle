@@ -34,7 +34,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'off-the-saddle.herokuapp.com',
     'localhost',
-    '8000-sashg91-offthesaddle-40wrqw7pcbw.ws-us99.gitpod.io', 'localhost']
+    '8000-sashg91-offthesaddle-40wrqw7pcbw.ws-eu99.gitpod.io'
+    ]
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

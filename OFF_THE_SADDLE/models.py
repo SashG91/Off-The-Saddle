@@ -61,7 +61,6 @@ class Climb(models.Model):
         max_digits=5,
     )
 
-
     class Meta:
         ordering = ["-created_on"]
 
@@ -71,13 +70,17 @@ class Climb(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
+
 class RideTime(models.Model):
     """
     Track time users take for a climb
     """
-    climb = models.ForeignKey(Climb, on_delete=models.CASCADE, related_name="climb")
-    rider = models.ForeignKey(User, on_delete=models.CASCADE, related_name='rider')
+    climb = models.ForeignKey(
+        Climb, on_delete=models.CASCADE, related_name="climb")
+    rider = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='rider')
     time = models.DurationField()
+
 
 class Comment(models.Model):
     """

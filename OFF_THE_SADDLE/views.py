@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Climb
+from .models import Climb, RideTime, Comment
 from django.views.generic import ListView
 from django.views.generic import DetailView
 from django.views.generic import UpdateView
@@ -30,6 +30,7 @@ class ClimbDetail(DetailView):
         context['ride_times'] = RideTime.objects.filter(
             climb=pk).order_by('-time')
 
+
 class AddClimbTime(CreateView): 
     """
     Create Climb Time View
@@ -37,4 +38,3 @@ class AddClimbTime(CreateView):
     model = RideTime
     fields = ['time']
     template_name = 'add_climb.html'
-    path('<slug:slug>/add_time', views.AddClimbTime.as_view(), name='add_time')
