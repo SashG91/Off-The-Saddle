@@ -22,23 +22,32 @@
                                 </a>
                                 <div class="image-flash">
                                     <p class="author">Author: {{ climb.author }}</p>
-                                    <p>Image source Pedalsure and Cyclinguphill.</p>
                                 </div>
                             </div>
-                            <a href="#">
-                                <h2 class="card-title">{{ climb.title }}</h2>
+                            <a class="card-title" href="#">
+                                <h2 class="mt-2">{{ climb.title }}</h2>
                             </a>
                             <p class="card-excerpt">{{ climb.excerpt }}</p>
-                            <p class="card-text card-icon"><i class="fa-solid fa-bolt"></i>
-                                {{ climb.get_climb_difficulty_display }}</p>
-                            <p class="card-text card-icon"><i class="fa-solid fa-road"></i>
-                                {{ climb.get_climb_surface_display }}</p>
-                            <p class="card-text card-icon"><i class="fa-solid fa-tape"></i>
-                                {{ climb.climb_length }}</p>
-                            <p class="card-text card-icon"><i class="fa-solid fa-mountains"></i>
-                                {{ climb.climb_elevationgain }}</p>
-                            <p class="card-text card-icon"><i class="fa-solid fa-crown"></i>
-                                {{ climb.climb_KOMQOM }}</p>
+                            <p class="card-text card-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                                {{ climb.get_climb_difficulty_display }}
+                            </p>
+                            <p class="card-text card-icon">
+                                <i class="fa-solid fa-road"></i>
+                                {{ climb.get_climb_surface_display }}
+                            </p>
+                            <p class="card-text card-icon">
+                                <i class="fa-solid fa-tape"></i>
+                                {{ climb.climb_length }}
+                            </p>
+                            <p class="card-text card-icon">
+                                <i class="fa-solid fa-mountains"></i>
+                                {{ climb.climb_elevationgain }}
+                            </p>
+                            <p class="card-text card-icon">
+                                <i class="fa-solid fa-crown"></i>
+                                {{ climb.climb_KOMQOM }}
+                            </p>
                             <hr>
                             <p class="card-text text-muted h6">{{ climb.created_on}}</p>
                             <p class="card-icon">

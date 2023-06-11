@@ -1,24 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand&display=swap');
+
 body {
     background-color: #F9FAFC;
-}
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #F9FAFC;
 }
 
 .dark-bg {
@@ -29,9 +17,31 @@ body {
     background-color: #F9FAFC;
 }
 
-.card {
+/* navigation & logo */
+
+.brand-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.brand-slogan {
+    display: flex;
+    color: #C3D2E4;
+    align-items: center;
+}
+
+/* blog post list cards */
+
+.card a {
     border: none;
-    background-color: #445261;
+    background-color: #C3D2E4
+}
+
+.card-title {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #445261;
 }
 
 .image-container {
@@ -51,6 +61,8 @@ body {
     margin: 4px;
     text-transform: uppercase;
 }
+
+/* blog post article */
 
 .masthead {
     margin-top: 10px;
@@ -85,6 +97,8 @@ body {
     transform: skew(15deg);
     z-index: 100;
 }
+
+/* links and buttons */
 
 .post-link {
     text-decoration: none;
@@ -141,15 +155,12 @@ body {
     border: none;
 }
 
-/* background colors */
-
-/* post-list card */
-
-/* post content */
-
-/* links and buttons */
-
 /* footer */
+
+footer p {
+    color: #C3D2E4;
+
+}
 
 /* media queries */
 
