@@ -163,3 +163,7 @@
 {% if user.is_authenticated %}
 <button type="add time" class="btn btn-add time btn-md mt-2">Add Time</button> 
 {% endif %}
+
+{% if user.is_authenticated %}
+<a class="btn btn-primary" href="{%url 'add_time' climb.slug %}">Add Ride Time</a>
+{% endif %}
