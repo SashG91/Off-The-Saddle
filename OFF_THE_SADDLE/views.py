@@ -70,12 +70,6 @@ class ClimbDetail(SuccessMessageMixin, View):
             comment.post = climb
             comment.save()
 
-            # ride_time_value = comment_form.cleaned_date['ride_time']
-            # if ride_time_value:
-            #     ride_time = RideTime(
-            #         climb=climb, rider=request.user, time=ride_time_value)
-            #     ride_time.save()
-
             messages.success(
                 request, 'Your comment has been uploaded for approval.')
             comment_form = CommentForm()

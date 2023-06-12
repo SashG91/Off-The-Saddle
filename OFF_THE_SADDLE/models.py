@@ -61,9 +61,6 @@ class Climb(models.Model):
         max_digits=5,
     )
 
-    # ride_time = models.ForeignKey(
-    #     RideTime, on_delete=models.CASCADE, null=True, blank=True)
-
     class Meta:
         ordering = ["-created_on"]
 
