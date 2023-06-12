@@ -64,13 +64,15 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - The climb list page was designed using cards to show a quick summary of each climb write-up.
 - The user has the ability to click and find out more about each climb.
 
-[INSERT WIREFRAME SCREENSHOT HERE]
+<img width="746" alt="Screenshot 2023-01-27 at 20 20 37" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/08851663-d128-420b-8805-631d4aa9feae">
+
 
 ### Climb Detail
 - Each blog post provides details about the climb such as difficulty, surface, distance and elevation gain.
 - The registered user can also comment, like and include their segment time for each climb.
 
-[INSERT WIREFRAME SCREENSHOT HERE]
+<img width="697" alt="Screenshot 2023-01-27 at 20 20 15" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/5105e486-ec15-485f-bdb2-7e9ed9ea0e0b">
+
 
 ## APP FEATURES / STRUCTURE
 
