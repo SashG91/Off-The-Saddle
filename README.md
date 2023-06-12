@@ -262,16 +262,31 @@ Include the below code to settings.py file:
 
 
 ## TECHNOLOGIES USED
+
+## Languages
+- HTML, CSS, JavaScript, Python
+
+## Frameworks
+- Django, Bootstrap
+
+## Databases
+- sqlite3, ElephantSQL
+
+## Programs
 - GitPod
 - GitHub
-- Django
-- Bootstrap
 - Cloudinary
-- Summernote
 - Crispy Forms
 - Heroku
 - Balsamiq
-- Fontawesome
+
+## Libraries and packs
+- Font Awesome
+- Django allauth
+- Django Crispy Forms
+- Summernote
+- gunicorn
+- psycopg2
 - Favicon
 
 ## CREDITS
