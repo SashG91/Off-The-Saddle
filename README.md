@@ -150,7 +150,7 @@ Below you will find explanations and screenshots of the intended outcome of the 
 
 ### Error 404/403/500
 - There are error pages in place in case a user is taken to a restricted area or the page does not exist.
-- If the user clicks the home button they will be taken back to the blog list page.
+- If the user clicks the home button they will be taken back to the blog list main page.
 
 [INSERT SCREENSHOTS HERE]
 
