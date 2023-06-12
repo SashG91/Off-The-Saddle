@@ -88,10 +88,23 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 - Manual testing was done on user stories due to project time constraints.
 
 ## Manual Testing
-- Each completed user story was tested against the acceptance criteria, see the corresponding screenshots as evidence.
+- Each completed user story was tested see the corresponding screenshots as evidence.
 - This included reviewing each feature to check the usability, visual design and performance.
+- The project board with the user stories can be found [here](https://github.com/users/SashG91/projects/3/views/1).
 
-The project board can be found [here](https://github.com/users/SashG91/projects/3/views/1)
+1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
+2. As an **admin user**, **I can approve/remove comments**, so that I can **maintain a friendly community atmospherefor the blog**.
+3. As an **admin user**, **I can create sample / draft posts**, so that I can **finish writing or publishing content later** as an **admin user**.
+4. As an **admin user**, **I can create, read, update and delete posts**, so that I can **maintain the blog content** as an **admin user**. 
+5. As a **site user**, I can register an account so that I can interact with the posts.
+6. As a **site user**, I can view a list of climb posts so that I can select one that interests me.
+7. As a **site user**, I can click on a post so that I can read the full write-up of each climb post.
+8. As a **site user**, I can view the number of likes on each post so that I can see which climbs are most popular among visitors.
+9. As a **site user**, I can like a post so that I can engage with the content.
+10. As a **site user**, I can view all comments on a post so that I can read other users impressions.
+11. As a **site user**, I can leave comments on a post so that I can share my own thoughts or experience.
+12. As a **site user**, I can edit and delete my comments on a post so that I can customise or remove my thoughts if desired.
+13. As a **site user**, I can return to safety of the blog home page, so that I am diverted away from any loading errors should they arise.
 
 ## Outstanding Defects
 - There are no outstanding major defects that affect functionality of the site.
