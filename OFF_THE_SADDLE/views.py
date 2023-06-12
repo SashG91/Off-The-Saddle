@@ -122,9 +122,10 @@ class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return super(CommentDelete, self).delete(request, *args, **kwargs)
 
     def get_success_url(self, *args, **kwargs):
-        PlantDetail.comment_deleted = True
+        climb_slug = self.object.post.slug
+        # ClimbDetail.comment_deleted = True
         messages.success(self.request, 'Your comment has been deleted.')
-        return reverse("post_detail", kwargs={"slug": self.object.post.slug})
+        return reverse("climb_detail", kwargs={"slug": climb_slug})
 
 
 class Page403(TemplateView):

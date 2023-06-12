@@ -115,7 +115,7 @@
                                 <a class="btn btn-signup btn-sm"
                                     href="#">Edit</a>
                                 <a class="btn btn-signup btn-sm"
-                                    href="#">Delete</a>
+                                    href="{% url 'delete_comment' climb.slug comment.pk %}">Delete</a>
                             </div>
                             {% endif %}
                         </div>
