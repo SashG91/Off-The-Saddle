@@ -1,11 +1,14 @@
 from django import forms
-from .models import Comment
+from .models import Comment, RideTime
 
 
 class CommentForm(forms.ModelForm):
     """
-    Form to add a comment from the user.
+    Form to add ride statistics to the blog post from the user.
+    Includes a field for ride time and custom comments.
     """
+    # ride_time = forms.DurationField(required=False, label='Ride Time')
+
     class Meta:
         model = Comment
         fields = ('body',)
@@ -22,5 +25,5 @@ class EditForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
         labels = {
-            "body": "Edit your ride information below:",
+            "body": "Make updates to your ride information below:",
         }

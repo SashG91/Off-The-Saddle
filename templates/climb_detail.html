@@ -113,9 +113,9 @@
                             {% if comment.name == request.user.username %}
                             <div class="col-sm mt-1">
                                 <a class="btn btn-signup btn-sm"
-                                    href="#">Edit</a>
+                                    href="{% url 'edit_ride' climb.slug comment.pk %}">Edit</a>
                                 <a class="btn btn-signup btn-sm"
-                                    href="{% url 'delete_comment' climb.slug comment.pk %}">Delete</a>
+                                    href="{% url 'delete_ride' climb.slug comment.pk %}">Delete</a>
                             </div>
                             {% endif %}
                         </div>

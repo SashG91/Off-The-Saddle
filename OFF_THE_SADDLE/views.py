@@ -69,8 +69,15 @@ class ClimbDetail(SuccessMessageMixin, View):
             comment = comment_form.save(commit=False)
             comment.post = climb
             comment.save()
-            messages.success(request,
-                             'Your comment has been uploaded for approval.')
+
+            # ride_time_value = comment_form.cleaned_date['ride_time']
+            # if ride_time_value:
+            #     ride_time = RideTime(
+            #         climb=climb, rider=request.user, time=ride_time_value)
+            #     ride_time.save()
+
+            messages.success(
+                request, 'Your comment has been uploaded for approval.')
             comment_form = CommentForm()
         else:
             comment_form = CommentForm()
@@ -104,6 +111,30 @@ class PostLike(LoginRequiredMixin, View):
         return HttpResponseRedirect(reverse('climb_detail', args=[slug]))
 
 
+class CommentEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    A view which allows riders to edit their ride stats.
+    Ensures the logged in user is the owner of the contribtuion.
+    Renders the edit function through a form.
+    """
+    model = Comment
+    form_class = EditForm
+    template_name = "edit_ride.html"
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user.username == comment.name
+
+    def form_valid(self, form):
+        super().form_valid(form)
+        messages.success(self.request, "You've successfully edited your ride!")
+        return HttpResponseRedirect(self.get_success_url())
+
+    def get_success_url(self, *args, **kwargs):
+        ClimbDetail.comment_edited = True
+        return reverse("climb_detail", kwargs={"slug": self.object.post.slug})
+
+
 class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     A view to allow users to delete a ride contribution.
@@ -112,7 +143,7 @@ class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     Redirects to the original ride post.
     """
     model = Comment
-    template_name = "delete_comment.html"
+    template_name = "delete_ride.html"
 
     def test_func(self):
         comment = self.get_object()
