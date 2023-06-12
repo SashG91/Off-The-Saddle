@@ -1,5 +1,7 @@
 # OFF THE SADDLE - A COLLECTION OF UK CYCLE CLIMBS.
 
+<img width="951" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/8602322f-8b39-409d-9c1e-e44302f67a02">
+
 ## Author
 Sashen Govender
 
@@ -13,16 +15,14 @@ Sashen Govender
 ## UX
 
 ### Project Goal
-* The aim of the project is to provides a platform that hosts a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in The UK and share their experiences with other users.
+* The aim of the project is to provide a platform that hosts a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in the region and share their experiences with other users.
 
 ### User Stories
 * For admin users:
-1. In order to **control and create the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
-2. In order to **maintain a friendly community atmospherefor the blog** as an **admin user**, **I can approve/remove comments.**
-3. In order to **finish writing or publishing content later** as an **admin user**, **I can create sample / draft posts.**
-4. In order to **maintain the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
-
-Have the ability to maintain the blog content as an admin user, I can create, read, update and delete all posts.
+1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
+2. As an **admin user**, **I can approve/remove comments**, so that I can **maintain a friendly community atmospherefor the blog**.
+3. As an **admin user**, **I can create sample / draft posts**, so that I can **finish writing or publishing content later** as an **admin user**.
+4. As an **admin user**, **I can create, read, update and delete posts**, so that I can **maintain the blog content** as an **admin user**. 
 
 * For sight users:
 5. As a **site user**, I can register an account so that I can interact with the posts.
@@ -38,30 +38,34 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 ## DESIGN CHOICES
 
 ### Colors
-- The colours chosen are expected to be easily viewed and readable. Lighter backgroung with darker text.
+<img width="406" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/1180c083-76d7-4d0c-bf45-0f963fae4a8b">
+
+- The colours chosen are expected to be easily viewed and readable. 
+- The above color palette inspired the look and feel of the website.
+- Lighter background used with darker text for accessibility purposes.
 - The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
 
 ### Typography
 - The body text and headings uses the font of Oswald with a secondary font of sans-serif.
-- This font for the body text was adopted from one of my previous cycling projects.
+- This font for the body text was adopted from one of my previous cycling projects using Quicksand.
+- Inspiration for this choice was drawn from [fontpair](https://www.fontpair.co/all).
 
 ### Images/Icons
 - The icons were chosen to provide clear understanding of each climb and its characteristics such as distance, surface, elevation gain and so on.
-- Each summary card has the same information structure with all icons standard throughout the site.
+- Each summary card has the same information structure, built using Bootstrap cards with all icons standard throughout the site.
 
 ### Animations
-- The navbar, social icons and buttons across the site have a subtle grow effect when hovered over by the user.
 - All links have a color change and underlined effect when hovered for clear distinction from the body text.
 
 ### Responsiveness
 - The website was designed mobile-first using flexbox to ensure responsiveness throughout the website.
-- The standard grid from Bootstrap was used to achieve this.
+- The structure of the nav bar and footer from Bootstrap allows for seemless transition from mobile to desktop view.
 
 ## WIREFRAMES
 Below you will find explanations and screenshots of the intended outcome of the pages, with some deviations in the final product.
 
 ### Climb List
-- The climb list page was designed using cards to show a quick summary of each climb write-up.
+- The climb list page was designed using Bootstrap cards to show a quick summary of each climb write-up.
 - The user has the ability to click and find out more about each climb.
 
 <img width="746" alt="Screenshot 2023-01-27 at 20 20 37" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/08851663-d128-420b-8805-631d4aa9feae">
@@ -72,107 +76,114 @@ Below you will find explanations and screenshots of the intended outcome of the 
 
 <img width="697" alt="Screenshot 2023-01-27 at 20 20 15" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/5105e486-ec15-485f-bdb2-7e9ed9ea0e0b">
 
-
 ## APP FEATURES / STRUCTURE
 
 ### Navigation
+
+<img width="533" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/56a18874-3cc8-4078-b106-21b6f167c238">
+
+<img width="390" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/b35743d8-d231-4287-91cf-d190744e1184">
+
 - The users will see a home, login/logout & register button when visiting the site. 
 - There is a hover state on each of the navigation items for better user experience.
 - For mobile devices, the navigation will toggle to a hamburger menu.
+- The user is able to easily return to the home page at any time using the bicycle logo at the top of the page.
 
 ### Climb List
-- The users will have a list of posts with a title, excerpt and summary card associated with each climb.
+
+<img width="279" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cd2a1016-d43b-474a-83bf-6552f551cb7a">
+
+- The users land on the home page and have a list of posts available with a title, excerpt and summary card associated with each climb.
 - The image and title are linked, so users may click on either and be taken to the climb.
 - There is a hover state on the title to show the user they can click on the post.
 - This summary card is later repeated in each climb detail post for continuity across the site.
 
-[INSERT SCREENSHOTS HERE]
-
 ### Climb Detail
-- Each climb post has an article about the climb.
+
+<img width="617" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/9aa8fc0b-9bce-4ec7-972d-d2c9c24325de">
+
+- Each climb post has an article about providing more information if desired.
+- If a user is logged in, they are able to interact with the post by commenting about their experience or liking the post.
 - The structure of each post is consistent, starting with the card at the top and excerpt from the climb list and then the main content.
 
-[INSERT SCREENSHOTS HERE]
-
 ### Likes
-- Should a user not be logged in, they will see the below information:
 
-[INSERT SCREENSHOTS HERE]
+<img width="188" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/31c8f78d-12d9-40cc-b947-b77d4d5bbb51">
 
-- Should the user be logged in, they will be able to like the post:
+<img width="179" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/36913130-82e8-406e-b9ba-a5bc054d0265">
 
-[INSERT SCREENSHOTS HERE]
-
-- The user is then able to easily return to the home page using the go back button or clicking the bicycle logo at the top of the page.
+- If a user is logged in, they can like the post (or unlike) and also see the climb likes count from other users.
 
 ### Comments
-- If a post doesn't have any comments, the user will see the below if not logged in:
 
-[INSERT SCREENSHOTS HERE]
+<img width="376" alt="Screenshot 2023-06-12 at 20 12 22" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/96661aaf-c2ba-4383-afa5-203222b5b240">
 
-- A logged in user, will be encouraged to share their experience if they have completed a featured climb.
+- For logged in users, a custom form with two fields is visible below the post to add their own experience of the ride and their time taken to finish.
+- This allows users to engage with each other and share their experiences.
 
-[INSERT SCREENSHOTS HERE]
+<img width="384" alt="Screenshot 2023-06-12 at 20 12 04" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/2cdd7043-59ec-4bc8-a698-9de01814c0d7">
 
-- The user will be able to edit their comment and RideTime using a form and be alerted using a message that disappears after several seconds.
+- The user will be able to edit their comment and ride time and be alerted using a message.
+
+<img width="407" alt="Screenshot 2023-06-12 at 20 11 21" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/c3359077-722e-4270-a45c-4c9a020c7025">
+
 - The user will be able to delete their comment after being prompted and allowed to go back if desired or will proceed and receive a success message:
 
-[INSERT SCREENSHOTS HERE]
+<img width="519" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/8437793a-62fa-43de-931e-0ce3953aee75">
 
-[INSERT SCREENSHOTS HERE]
-
-- A logged in user, will be encouraged to input their RideTime for the climb segment if they have completed it.
-
-[INSERT SCREENSHOTS HERE]
+- For posts without contributions, users will be encouraged to do so and have quick access to the sign up page via the provided links.
+- If users are not logged in, they cannot make contributions to the posts.
 
 ### Register 
-- The user will be able to easily sign up as a user using the below form.
-- Should user already be registered, there is a link to easily navigate to login instead
 
-[INSERT SCREENSHOTS HERE]
+<img width="801" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/4613cfb4-92b3-49ac-86ca-b0ef1c5f7c7d">
+
+- The user will be able to easily sign up using the below form built using Django allauth.
+- Should user be registered, there is a link to easily navigate to login instead.
 
 ### Login/Logout 
-- The users can easily sign in using the below form with an option to 'remember me' if desired.
-- If a user hasn't registered, there is a link to easily navigate to sign up instead.
 
-[INSERT SCREENSHOTS HERE]
+<img width="897" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/e133e828-1a3e-44ab-bb81-36d599eec84d">
 
-- The user is prompted with a message before logging out:
+<img width="339" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/60eb79e4-5d67-4f01-9b00-dd9e30840202">
 
-[INSERT SCREENSHOTS HERE]
+<img width="969" alt="Screenshot 2023-06-12 at 20 19 06" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/9c2e0db6-a258-4727-9a1d-c80dea16bcdd">
 
+- The users can easily sign in with an option to 'remember me' if desired.
+- If a user hasn't registered, there is a link to easily navigate to signup instead.
+- The user is prompted with a message before logging out.
 - The user will receive a message that disappears after 3 seconds to say they have logged in/logged out:
-[INSERT SCREENSHOTS HERE]
 
 ### Footer
+
+<img width="690" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/5b0f7478-2b99-4156-8438-a6f714481916">
+
 - The footer links directly to the social media pages of the cycle climb blog.
-- There is a subtle hover state on each icon for better user experience.
+- It is responsive and includes additional information about the site owner.
 
 ### Error 404/403/500
+
+<img width="1439" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cfe6f7a8-af9f-47f9-b0b8-930f89272460">
+
 - There are error pages in place in case a user is taken to a restricted area or the page does not exist.
 - If the user clicks the home button they will be taken back to the blog list main page.
-
-[INSERT SCREENSHOTS HERE]
+- The messages are designed to be informative and related to the theme of the site. 
 
 ### Features for Future Development
-- Once the site contains many lists of posts it will be less time consuming to all the user to use the search bar to quickly search for a climb by area to find a climb that interests them.
-- Users will benefit from being able to 'save' blog posts so that users can plan future rides in specific regions.
-- Users will be able to see where their RideTime for a climb segment is ranked according to other users on the same climb in a leaderboard for this blog.
-- Comments that are in pending state can be added so users are aware they are awaiting approval from the admin.
-- Give users the ability to filter according to climb difficulty so that users can find the climbs that may be appropriate for me.
-- Give users the abilitiy to favourite/save a climb I am interested in so that users can easily find ideas for future outings.
-- Give users the ability to rate blog posts on a scale of 1-5 so that users can give feedback about which posts I find valuable.
-
+- Build a ranking feature where users can see their ride time for a climb segment according to other users on the same climb.
+- Filter posts according to climb difficulty so that users can find the climbs that may be appropriate for me.
+- Let users favourite/save a climb so that users can easily find ideas for future outings.
+- Build upon the contributions, allowing users to have more statistics about themselves in an online profile.
 
 ## DATA MODEL
 - A relational database was designed between climb and comment model with a link to Django user authorisation.
-- The comment model was based off 'I think, therefore I Blog' walkthrough project.
+- The comment model was based off 'I think, therefore I Blog' walkthrough project, with an addition of a DurationField as customisation.
 - The Climb model was customised according to the data needed for the Off The Saddle blog concept.
 - This included 2 choice fields for climb difficulty and climb surface.
 - For climb length and elevation gain, this was represented as a decimal field.
 - For KOM and QOM, this was represented by a TimeField
-<img width="373" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cb6f4b2e-0f6e-4a61-a7e9-7131e26c8aa0">
 
+<img width="373" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cb6f4b2e-0f6e-4a61-a7e9-7131e26c8aa0">
 
 - [X] C - Site users can create/register an account to interact with the climb posts.
 - [X] R - Site users can open and read the climb posts and read comments from other users.
@@ -181,11 +192,10 @@ Below you will find explanations and screenshots of the intended outcome of the 
 
 <img width="367" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/573bbdaa-a148-479d-a829-306f01c336bb">
 
-
-- [X] C - Site users can create comments using a form on each climb post.
+- [X] C - Site users can add their contributions/experiences to each climb using a customised form.
 - [X] R - Site users can read comments from other users.
-- [X] U - Site users are able to update/edit their comments via a form.
-- [X] D - Site users are able to delete their comments.
+- [X] U - Site users are able to update/edit their ride experiences via a form.
+- [X] D - Site users are able to delete their contributions.
 
 ## TESTING
 
@@ -286,16 +296,19 @@ GitHub/GitPod
 - Favicon
 
 ## CREDITS
-- The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted with the basic setup and structure for this project.
+- The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted with the basic setup, inspiration and structure for this project.
 - Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
 - The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments as well as the messaging alerts.
-- The blog content was written with help from the following websites [here](https://www.pedalsure.com/blog/5-hardest-climbs-in-the-uk) and [here](https://cyclinguphill.com/100-climbs/shibden-wall/)
+- The blog content was inspired and written with help from the following websites [here](https://www.pedalsure.com/blog/5-hardest-climbs-in-the-uk) and [here](https://cyclinguphill.com/100-climbs/shibden-wall/)
+- Big thanks to Daisy Mc Girr and her article on how to secure views via [Codu](https://www.codu.co/articles/securing-django-views-from-unauthorized-access-npyb3to_)
+- The following Django documentation [here]((https://www.geeksforgeeks.org/durationfield-django-forms/)) assisted with using DurationField in my models and forms.
+- I learned a lot from [Seaside Sewing](https://github.com/kera-cudmore/seaside-sewing) by Kera Kudmore on how to setup a solid testing structure and documentation.
 
 ## MEDIA
-- The fonts were chosen with guidance from
-- The colors for the website was generated using 
-- The climb images were sourced using cyclinguphill.com and pedalsure.
-- The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
+- The fonts were chosen with guidance from [Google Fonts](https://fonts.google.com/) and inspiration drawn from [fontpair](https://www.fontpair.co/all)
+- The colours for the website was generated using [ColorSpace](https://mycolor.space/)
+- The climb images were sourced using [Cycling Uphill](https://cyclinguphill.com/) and PedalSure.
+- The icons for the favicon, footer, about page and location headings were utilised from [Font Awesome](https://fontawesome.com/).
 - The favicon image was converted using [Favicon.io](https://favicon.io/).
 
 ## ACKNOWLEDGEMENTS
