@@ -1,17 +1,15 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.http import HttpResponseRedirect
 from django.views import generic, View
 from .models import Climb, RideTime, Comment
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.views.generic import TemplateView
 from django.views.generic import DeleteView, UpdateView
-from django.http import HttpResponseRedirect
 
 from django.views.generic import ListView, DetailView, CreateView
-
-
 from .forms import CommentForm, EditForm
-
 from django.contrib.messages.views import SuccessMessageMixin
 
 
@@ -19,6 +17,7 @@ class ClimbList(generic.ListView):
     """
     A view to render all blog posts in a paginated list.
     Renders information from the climb model.
+    Forms the main page of the website.
     """
     model = Climb
     queryset = Climb.objects.filter(status=1).order_by('-created_on')
@@ -30,6 +29,7 @@ class ClimbDetail(SuccessMessageMixin, View):
     """
     A view to render the details of each blog post.
     Renders further information from the climb model.
+    Includes get and post methods for commenting.
     """
     model = Climb
     template_name = 'climb_detail.html'
@@ -89,7 +89,10 @@ class ClimbDetail(SuccessMessageMixin, View):
 
 
 class PostLike(LoginRequiredMixin, View):
-
+    """
+    A view to add likes to each climb.
+    If clicked, users are directed to the original page.
+    """
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Climb, slug=slug)
 
@@ -100,13 +103,28 @@ class PostLike(LoginRequiredMixin, View):
 
         return HttpResponseRedirect(reverse('climb_detail', args=[slug]))
 
-# class AddClimbTime(CreateView): 
-#     """
-#     Create Climb Time View
-#     """
-#     model = RideTime
-#     fields = ['time']
-#     template_name = 'add_climb.html'
+
+class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    A view to allow users to delete a ride contribution.
+    Ensures the user logged in is the owner of the comment.
+    Prompts user before deletion, confirms if deleted.
+    Redirects to the original ride post.
+    """
+    model = Comment
+    template_name = "delete_comment.html"
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user.username == comment.name
+
+    def delete(self, request, *args, **kwargs):
+        return super(CommentDelete, self).delete(request, *args, **kwargs)
+
+    def get_success_url(self, *args, **kwargs):
+        PlantDetail.comment_deleted = True
+        messages.success(self.request, 'Your comment has been deleted.')
+        return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
 class Page403(TemplateView):
