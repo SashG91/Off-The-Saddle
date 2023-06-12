@@ -7,7 +7,6 @@ class CommentForm(forms.ModelForm):
     Form to add ride statistics to the blog post from the user.
     Includes a field for ride time and custom comments.
     """
-    # ride_time = forms.DurationField(required=False, label='Ride Time')
 
     class Meta:
         model = Comment

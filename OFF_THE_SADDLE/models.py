@@ -72,18 +72,6 @@ class Climb(models.Model):
         return self.likes.count()
 
 
-class RideTime(models.Model):
-    """
-    Track time users take for a climb
-    """
-    climb = models.ForeignKey(
-        Climb, on_delete=models.CASCADE, related_name="climb")
-    rider = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='rider')
-    time = models.DurationField(
-        default=timedelta(hours=0, minutes=0, seconds=0))
-
-
 class Comment(models.Model):
     """
     Django model for the information storage
