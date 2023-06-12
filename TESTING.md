@@ -90,11 +90,12 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 - Manual testing was done on user stories due to project time constraints.
 
 ## Manual Testing
-- Each completed user story was tested with detailed steps of each feature [here](https://docs.google.com/spreadsheets/d/1iGQ1BSuya_-S_H4ncQ7NwuC3lc1k-G9Twlx2u8B5wZY/edit?usp=sharing) 
+- Each completed user story was tested with detailed steps of each feature [here](https://docs.google.com/spreadsheets/d/1iGQ1BSuya_-S_H4ncQ7NwuC3lc1k-G9Twlx2u8B5wZY/edit?usp=sharing). 
 - These steps included validation of forms and any unhappy paths that a user might take.
 - The matching user story is documented with the steps taken to fulfil it and a URL is provided for easier reference.
 - You can see the corresponding screenshots of each feature as evidence in the README documentation.
 
+**USER STORIES TESTED**
 1. As an **admin user**, I can access the admin panel using admin login details so that I can control and create the content for the blog.
 2. As an **admin user**, I can approve/remove comments, so that I can maintain a friendly community atmospherefor the blog.
 3. As an **admin user**, I can create sample / draft posts, so that I can finish writing or publishing content later.
@@ -120,4 +121,3 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 ## Defects of Note
 - The RideTime model relation between the comment and climb models was difficult to establish and issues arose with the foreign keys and calling rhe correct ids to save to the database and was thus removed for future features. More time and greater experience would allow for this addition to the site.
-- 
