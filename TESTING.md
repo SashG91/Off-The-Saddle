@@ -1,5 +1,7 @@
 # Off The Saddle - Testing Content
 
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/cacf57b9-dfcf-4248-8a4a-ddc932254382)
+
 Testing was done throughout the build, with validations being checked often and accessibility suggestions implemented where possible. For outstanding defects and defects of note, please see below.
 
 ## Validation Testing
@@ -92,10 +94,10 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 - This included reviewing each feature to check the usability, visual design and performance.
 - The project board with the user stories can be found [here](https://github.com/users/SashG91/projects/3/views/1).
 
-1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
-2. As an **admin user**, **I can approve/remove comments**, so that I can **maintain a friendly community atmospherefor the blog**.
-3. As an **admin user**, **I can create sample / draft posts**, so that I can **finish writing or publishing content later** as an **admin user**.
-4. As an **admin user**, **I can create, read, update and delete posts**, so that I can **maintain the blog content** as an **admin user**. 
+1. As an **admin user**, I can access the admin panel using admin login details so that I can control and create the content for the blog.
+2. As an **admin user**, I can approve/remove comments, so that I can maintain a friendly community atmospherefor the blog.
+3. As an **admin user**, I can create sample / draft posts, so that I can finish writing or publishing content later.
+4. As an **admin user**, I can create, read, update and delete posts, so that I can maintain the blog content as an admin user. 
 5. As a **site user**, I can register an account so that I can interact with the posts.
 6. As a **site user**, I can view a list of climb posts so that I can select one that interests me.
 7. As a **site user**, I can click on a post so that I can read the full write-up of each climb post.
