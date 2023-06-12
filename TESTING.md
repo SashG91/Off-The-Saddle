@@ -1,6 +1,6 @@
 # Off The Saddle - Testing Content
 
-## Contents
+Testing was done throughout the build, with validations being checked often and accessibility suggestions implemented where possible. For outstanding defects and defects of note, please see below.
 
 ## Validation Testing
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, The HTML was checked by inspecting the page source and then running this through the validator.
@@ -16,8 +16,7 @@
 - The climb detail page had two warnings and two errors that were sourced to an issue with summernote and the rendering of the main blog content.
 - None of the html issues were hardcoded and thus difficult to trace the root cause.
 - Investigation of initial setup and configuration on the admin panel did not resolve the problem.
-- The following articles were used to try rectify the issue [here](https://lists.w3.org/Archives/Public/www-validator/2011Aug/0011.html) and [here](https://stackoverflow.com/questions/12736598/element-name-gcsesearchbox-only-cannot-be-represented-as-xml-1-0)
-
+- The following articles were used to try rectify the issue [here](https://lists.w3.org/Archives/Public/www-validator/2011Aug/0011.html) and [here](https://stackoverflow.com/questions/12736598/element-name-gcsesearchbox-only-cannot-be-represented-as-xml-1-0).
 
 ### CSS
 [W3C](https://validator.w3.org/) was used to validate the CSS.
@@ -58,7 +57,7 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 #### Desktop Results
 
-**Desktop performance:
+**Desktop performance:**
 - [Home Page](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/bcded80b-7509-4c50-bf14-3f78943ed45e))
 - [Climb Detail](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/dd0b3405-911f-4b6e-ab5e-ef3c98d014a7))
 - [Edit Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/00b8a585-2f26-481d-bcc9-0fbcb5d84c2a))
@@ -66,13 +65,24 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 - [Sign up](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/754ac454-83ae-4d00-b981-bbb6dfe3848a))
 - [Login](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/8b2ed13b-2634-41af-9c67-3de2e098c6e6))
 
-**Mobile performance:
+- Desktop performance was better than expected with speed index flagged as an area for improvement. 
+- After investigating the issue [here](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/?utm_source=lighthouse&utm_medium=lr) it appears that Heroku might be causing a slower server response time or queries to the database using ElephantSQl could also be a factor.
+
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/99c114b6-0a32-4836-bf92-335df6cb36ce)
+
+**Mobile performance:**
 - [Home Page](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/42952b39-50c2-4e4e-aa31-6a231a50b5d1))
 - [Climb Detail](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4))
 - [Edit Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87))
 - [Delete Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45))
 - [Sign up](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/9cb45565-0ae0-45f7-8936-86bc2c8ba21d))
 - [Login](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/ab3a18e2-f3d7-42da-b1ae-08ab73a45a73))
+
+- Mobile performed well and had a different issue flagged with first contenful paint.
+- This was caused by render blocking resources such as Cloudinary and Bootstrap.
+- More investigations need to be done on how to rectify this after consulting the documentation [here](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=lr)
+
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/f803a9f9-fe6b-4560-ac91-fdf49e7c6877)
 
 ## Automated Testing
 - Manual testing was done on user stories due to project time constraints.
