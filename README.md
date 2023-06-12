@@ -167,14 +167,23 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - Comments that are in pending state can be added so users are aware they are awaiting approval from the admin.
 
 ## DATA MODEL
-[INSERT SCREENSHOTS HERE]
+
+- A relational database was designed between climb and comment model with a link to Django user authorisation.
+- The comment model was based off 'I think, therefore I Blog' walkthrough project.
+- The Climb model was customised according to the data needed for the Off The Saddle blog concept.
+- This included 2 choice fields for climb difficulty and climb surface.
+- For climb length and elevation gain, this was represented as a decimal field.
+- For KOM and QOM, this was represented by a TimeField
+<img width="373" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cb6f4b2e-0f6e-4a61-a7e9-7131e26c8aa0">
+
 
 - [X] C - Site users can create/register an account to interact with the climb posts.
 - [X] R - Site users can open and read the climb posts and read comments from other users.
 - [X] U - Site users can like a post, updating the details and analytics for a post.
 - [X] D - Site users can retract their like if desired on a climb post.
 
-[INSERT SCREENSHOTS HERE]
+<img width="367" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/573bbdaa-a148-479d-a829-306f01c336bb">
+
 
 - [X] C - Site users can create comments using a form on each climb post.
 - [X] R - Site users can read comments from other users.
