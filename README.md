@@ -11,6 +11,46 @@ Sashen Govender
 * You can view the deployed website [here](https://off-the-saddle.herokuapp.com/).
 
 ## TABLE OF CONTENTS
+- [OFF THE SADDLE - A COLLECTION OF UK CYCLE CLIMBS.](#off-the-saddle---a-collection-of-uk-cycle-climbs)
+  * [Author](#author)
+  * [Project Overview](#project-overview)
+  * [TABLE OF CONTENTS](#table-of-contents)
+  * [UX](#ux)
+    + [Project Goal](#project-goal)
+    + [User Stories](#user-stories)
+  * [DESIGN CHOICES](#design-choices)
+    + [Colors](#colors)
+    + [Typography](#typography)
+    + [Images/Icons](#images-icons)
+    + [Animations](#animations)
+    + [Responsiveness](#responsiveness)
+  * [WIREFRAMES](#wireframes)
+    + [Climb List](#climb-list)
+    + [Climb Detail](#climb-detail)
+  * [APP FEATURES / STRUCTURE](#app-features---structure)
+    + [Navigation](#navigation)
+    + [Climb List](#climb-list-1)
+    + [Climb Detail](#climb-detail-1)
+    + [Likes](#likes)
+    + [Comments](#comments)
+    + [Register](#register)
+    + [Login/Logout](#login-logout)
+    + [Footer](#footer)
+    + [Error 404/403/500](#error-404-403-500)
+    + [Features for Future Development](#features-for-future-development)
+  * [DATA MODEL](#data-model)
+  * [TESTING](#testing)
+  * [DEPLOYMENT PROCESS](#deployment-process)
+  * [TECHNOLOGIES USED](#technologies-used)
+    + [Languages](#languages)
+    + [Frameworks](#frameworks)
+    + [Databases](#databases)
+    + [Programs](#programs)
+    + [Libraries and packs](#libraries-and-packs)
+  * [CREDITS](#credits)
+  * [MEDIA](#media)
+  * [ACKNOWLEDGEMENTS](#acknowledgements)
+
 
 ## UX
 
@@ -18,13 +58,13 @@ Sashen Govender
 * The aim of the project is to provide a platform that hosts a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in the region and share their experiences with other users.
 
 ### User Stories
-* For admin users:
+**For admin users:**
 1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
 2. As an **admin user**, **I can approve/remove comments**, so that I can **maintain a friendly community atmospherefor the blog**.
 3. As an **admin user**, **I can create sample / draft posts**, so that I can **finish writing or publishing content later** as an **admin user**.
 4. As an **admin user**, **I can create, read, update and delete posts**, so that I can **maintain the blog content** as an **admin user**. 
 
-* For sight users:
+**For sight users:**
 5. As a **site user**, I can register an account so that I can interact with the posts.
 6. As a **site user**, I can view a list of climb posts so that I can select one that interests me.
 7. As a **site user**, I can click on a post so that I can read the full write-up of each climb post.
@@ -269,16 +309,16 @@ GitHub/GitPod
 
 ## TECHNOLOGIES USED
 
-## Languages
+### Languages
 - HTML, CSS, JavaScript, Python
 
-## Frameworks
+### Frameworks
 - Django, Bootstrap
 
-## Databases
+### Databases
 - sqlite3, ElephantSQL
 
-## Programs
+### Programs
 - GitPod
 - GitHub
 - Cloudinary
@@ -286,7 +326,7 @@ GitHub/GitPod
 - Heroku
 - Balsamiq
 
-## Libraries and packs
+### Libraries and packs
 - Font Awesome
 - Django allauth
 - Django Crispy Forms
