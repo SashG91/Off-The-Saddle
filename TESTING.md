@@ -57,8 +57,6 @@ Testing was done throughout the build, with validations being checked often and 
 ## Lighthouse
 For the performance, accessibility, best practices and SEO of the site for mobile and desktop, [Page Speed](https://pagespeed.web.dev/) and the major pages were passed through the validation. 
 
-#### Desktop Results
-
 **Desktop performance:**
 
 - Home Page
@@ -92,21 +90,22 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/99c114b6-0a32-4836-bf92-335df6cb36ce)
 
 **Mobile performance:**
+
 Home Page
 
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/42952b39-50c2-4e4e-aa31-6a231a50b5d1)
 
 Climb Detail
 
-(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4)
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4)
 
 Edit Comment
 
-(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87)
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87)
 
 Delete Comment
 
-(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45)
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45)
 
 Sign up
 
