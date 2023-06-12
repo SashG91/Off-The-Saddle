@@ -34,21 +34,20 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 11. As a **site user**, I can leave comments on a post so that I can share my own thoughts or experience.
 12. As a **site user**, I can edit and delete my comments on a post so that I can customise or remove my thoughts if desired.
 13. As a **site user**, I can return to safety of the blog home page, so that I am diverted away from any loading errors should they arise.
-14. As a **site user**, I can filter according to climb difficulty so that I can find the climbs that may be appropriate for me.
-15. As a **site user**, I can favourite/save a climb I am interested in so that I can easily find ideas for future outings.
-16. As a **site user**, I can rate blog posts on a scale of 1-5 so that I can give feedback about which posts I find valuable.
-
 
 ## DESIGN CHOICES
 
 ### Colors
-- 
+- The colours chosen are expected to be easily viewed and readable. Lighter backgroung with darker text.
+- The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
 
 ### Typography
-- 
+- The body text and headings uses the font of Oswald with a secondary font of sans-serif.
+- This font for the body text was adopted from one of my previous cycling projects.
 
 ### Images/Icons
-- 
+- The icons were chosen to provide clear understanding of each climb and its characteristics such as distance, surface, elevation gain and so on.
+- Each summary card has the same information structure with all icons standard throughout the site.
 
 ### Animations
 - The navbar, social icons and buttons across the site have a subtle grow effect when hovered over by the user.
@@ -59,13 +58,13 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - The standard grid from Bootstrap was used to achieve this.
 
 ## WIREFRAMES
+Below you will find explanations and screenshots of the intended outcome of the pages, with some deviations in the final product.
 
 ### Climb List
 - The climb list page was designed using cards to show a quick summary of each climb write-up.
 - The user has the ability to click and find out more about each climb.
 
 <img width="746" alt="Screenshot 2023-01-27 at 20 20 37" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/08851663-d128-420b-8805-631d4aa9feae">
-
 
 ### Climb Detail
 - Each blog post provides details about the climb such as difficulty, surface, distance and elevation gain.
@@ -122,11 +121,6 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 
 [INSERT SCREENSHOTS HERE]
 
-### RideTime
-- If a post doesn't have any times submitted, the user will see the below if not logged in:
-
-[INSERT SCREENSHOTS HERE]
-
 - A logged in user, will be encouraged to input their RideTime for the climb segment if they have completed it.
 
 [INSERT SCREENSHOTS HERE]
@@ -165,9 +159,12 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 - Users will benefit from being able to 'save' blog posts so that users can plan future rides in specific regions.
 - Users will be able to see where their RideTime for a climb segment is ranked according to other users on the same climb in a leaderboard for this blog.
 - Comments that are in pending state can be added so users are aware they are awaiting approval from the admin.
+- Give users the ability to filter according to climb difficulty so that users can find the climbs that may be appropriate for me.
+- Give users the abilitiy to favourite/save a climb I am interested in so that users can easily find ideas for future outings.
+- Give users the ability to rate blog posts on a scale of 1-5 so that users can give feedback about which posts I find valuable.
+
 
 ## DATA MODEL
-
 - A relational database was designed between climb and comment model with a link to Django user authorisation.
 - The comment model was based off 'I think, therefore I Blog' walkthrough project.
 - The Climb model was customised according to the data needed for the Off The Saddle blog concept.
@@ -192,36 +189,7 @@ Have the ability to maintain the blog content as an admin user, I can create, re
 
 ## TESTING
 
-### Validation Testing
-
-- HTML
-
-- CSS
-
-- JavaScript
-
-### Cross Browser / Device Testing
--
-
-### Manual Testing
-- You can view manual testing of the website [here]
-
-### Automatic Testing
-- Manual testing was done due to time constraints.
-
-### Defects of Note
--
-
-### Outstanding Defects
--
-
-## ACCESSIBILITY
-
-### Lighthouse Audit
--
-
-### Keyboard Navigation
-- The users has the ability to use the tab button to navigate the website if required.
+Please refer to the (TESTING.md) file for all testing performed.
 
 ## DEPLOYMENT PROCESS
 **Step 1:** Open a new app in Heroku, choose a unique name and region.
