@@ -34,7 +34,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     'off-the-saddle.herokuapp.com',
     'localhost',
-    '8000-sashg91-offthesaddle-40wrqw7pcbw.ws-eu99.gitpod.io'
+    '8000-sashg91-offthesaddle-40wrqw7pcbw.ws-us99.gitpod.io'
     ]
 
 
