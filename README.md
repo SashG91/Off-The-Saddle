@@ -80,6 +80,8 @@ Sashen Govender
 11. As a **site user**, I can leave comments on a post so that I can share my own thoughts or experience.
 12. As a **site user**, I can edit and delete my comments on a post so that I can customise or remove my thoughts if desired.
 13. As a **site user**, I can return to safety of the blog home page, so that I am diverted away from any loading errors should they arise.
+14. As a **site user**, I can navigate to the social media links of the blog site, so that I can engage further with the community.
+15. As a **site user**, I can safely login and logout of my account, so that I can keep my information safe.
 
 ## DESIGN CHOICES
 
