@@ -60,26 +60,51 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 #### Desktop Results
 
 **Desktop performance:**
-- [Home Page](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/bcded80b-7509-4c50-bf14-3f78943ed45e))
-- [Climb Detail](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/dd0b3405-911f-4b6e-ab5e-ef3c98d014a7))
-- [Edit Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/00b8a585-2f26-481d-bcc9-0fbcb5d84c2a))
-- [Delete Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/7e2a1e0c-08c5-47be-a836-cd447c84e821))
-- [Sign up](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/754ac454-83ae-4d00-b981-bbb6dfe3848a))
-- [Login](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/8b2ed13b-2634-41af-9c67-3de2e098c6e6))
 
+- Home Page
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/bcded80b-7509-4c50-bf14-3f78943ed45e)
+
+- Climb Detail
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/dd0b3405-911f-4b6e-ab5e-ef3c98d014a7)
+
+- Edit Comment
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/00b8a585-2f26-481d-bcc9-0fbcb5d84c2a)
+
+- Delete Comment
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/7e2a1e0c-08c5-47be-a836-cd447c84e821)
+
+- Sign up
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/754ac454-83ae-4d00-b981-bbb6dfe3848a)
+
+- Login
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/8b2ed13b-2634-41af-9c67-3de2e098c6e6)
+
+**RESULTS:**
 - Desktop performance was better than expected with speed index flagged as an area for improvement. 
 - After investigating the issue [here](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/?utm_source=lighthouse&utm_medium=lr) it appears that Heroku might be causing a slower server response time or queries to the database using ElephantSQl could also be a factor.
 
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/99c114b6-0a32-4836-bf92-335df6cb36ce)
 
 **Mobile performance:**
-- [Home Page](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/42952b39-50c2-4e4e-aa31-6a231a50b5d1))
-- [Climb Detail](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4))
-- [Edit Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87))
-- [Delete Comment](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45))
-- [Sign up](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/9cb45565-0ae0-45f7-8936-86bc2c8ba21d))
-- [Login](![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/ab3a18e2-f3d7-42da-b1ae-08ab73a45a73))
+Home Page
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/42952b39-50c2-4e4e-aa31-6a231a50b5d1)
 
+Climb Detail
+(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4)
+
+Edit Comment
+(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87)
+
+Delete Comment
+(![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45)
+
+Sign up
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/9cb45565-0ae0-45f7-8936-86bc2c8ba21d)
+
+- Login
+![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/ab3a18e2-f3d7-42da-b1ae-08ab73a45a73)
+
+**RESULTS:**
 - Mobile performed well and had a different issue flagged with first contenful paint.
 - This was caused by render blocking resources such as Cloudinary and Bootstrap.
 - More investigations need to be done on how to rectify this after consulting the documentation [here](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=lr)
