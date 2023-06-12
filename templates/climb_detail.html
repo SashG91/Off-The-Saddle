@@ -105,7 +105,9 @@
                             {{ comment.body | linebreaksbr }}
                         </div>
                         <div>
-                            <p class="mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
+                            <p class="font-weight-bold">Time: <span>{{ comment.time }}</span></p>
+                            <p class="mt-1">
+                                <i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
                                 on <span>{{ comment.created_on }}</span>
                             </p>
                         </div>

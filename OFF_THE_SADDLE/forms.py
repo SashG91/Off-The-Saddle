@@ -11,7 +11,7 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('body',)
+        fields = ('body', 'time')
         labels = {
             "body": "Share your climb experience here.",
         }
@@ -23,7 +23,7 @@ class EditForm(forms.ModelForm):
     """
     class Meta:
         model = Comment
-        fields = ('body',)
+        fields = ('body', 'time')
         labels = {
             "body": "Make updates to your ride information below:",
         }

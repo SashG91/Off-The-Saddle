@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from datetime import timedelta
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -79,7 +80,8 @@ class RideTime(models.Model):
         Climb, on_delete=models.CASCADE, related_name="climb")
     rider = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='rider')
-    time = models.DurationField()
+    time = models.DurationField(
+        default=timedelta(hours=0, minutes=0, seconds=0))
 
 
 class Comment(models.Model):
@@ -91,9 +93,12 @@ class Comment(models.Model):
         Climb, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
+    time = models.DurationField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
+    time = models.DurationField(
+        default=timedelta(hours=0, minutes=0, seconds=0))
 
     class Meta:
         ordering = ["created_on"]
