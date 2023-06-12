@@ -58,6 +58,10 @@ Sashen Govender
 * The aim of the project is to provide a platform that hosts a collection of the most popular or unique cycling climbs in the UK, so that users have more information to better prepare for hill cycling in the region and share their experiences with other users.
 
 ### User Stories
+- An agile approach was used to develop the project, developing small units of work in the form of user stories.
+- These were managed and documented using a kanban style board on GitHub projects.
+- The project board with the user stories can be found [here](https://github.com/users/SashG91/projects/3/views/1).
+
 **For admin users:**
 
 1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
