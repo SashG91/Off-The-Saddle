@@ -62,21 +62,27 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 **Desktop performance:**
 
 - Home Page
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/bcded80b-7509-4c50-bf14-3f78943ed45e)
 
 - Climb Detail
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/dd0b3405-911f-4b6e-ab5e-ef3c98d014a7)
 
 - Edit Comment
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/00b8a585-2f26-481d-bcc9-0fbcb5d84c2a)
 
 - Delete Comment
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/7e2a1e0c-08c5-47be-a836-cd447c84e821)
 
 - Sign up
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/754ac454-83ae-4d00-b981-bbb6dfe3848a)
 
 - Login
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/8b2ed13b-2634-41af-9c67-3de2e098c6e6)
 
 **RESULTS:**
@@ -87,21 +93,27 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 **Mobile performance:**
 Home Page
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/42952b39-50c2-4e4e-aa31-6a231a50b5d1)
 
 Climb Detail
+
 (![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/76c28ecd-3b1c-4072-85ee-aecc6dbcb7b4)
 
 Edit Comment
+
 (![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/fa08129d-be56-4483-823f-2d6103557a87)
 
 Delete Comment
+
 (![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/89f1a674-9c53-44ef-831b-b3438635be45)
 
 Sign up
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/9cb45565-0ae0-45f7-8936-86bc2c8ba21d)
 
-- Login
+Login
+
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/ab3a18e2-f3d7-42da-b1ae-08ab73a45a73)
 
 **RESULTS:**
