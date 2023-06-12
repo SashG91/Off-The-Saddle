@@ -59,12 +59,14 @@ Sashen Govender
 
 ### User Stories
 **For admin users:**
+
 1. As an **admin user**, **I can access the admin panel using admin login details** so that I can **control and create the content for the blog**.
 2. As an **admin user**, **I can approve/remove comments**, so that I can **maintain a friendly community atmospherefor the blog**.
 3. As an **admin user**, **I can create sample / draft posts**, so that I can **finish writing or publishing content later** as an **admin user**.
 4. As an **admin user**, **I can create, read, update and delete posts**, so that I can **maintain the blog content** as an **admin user**. 
 
 **For sight users:**
+
 5. As a **site user**, I can register an account so that I can interact with the posts.
 6. As a **site user**, I can view a list of climb posts so that I can select one that interests me.
 7. As a **site user**, I can click on a post so that I can read the full write-up of each climb post.
