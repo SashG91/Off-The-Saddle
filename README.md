@@ -201,6 +201,7 @@ Heroku
 - Open a new app in Heroku, choose a unique name and region.
 - Go to settings and add a new config var of DATABASE_URLpython with the value of the URL from ElephantSQL.
 - Add host name of the Heroku app name to ALLOWED HOSTS in settings.py:
+
 <img width="819" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/c63d5687-f58b-4b75-b00b-f3f566651578">
 
 GitHub/GitPod
@@ -211,22 +212,27 @@ GitHub/GitPod
 - Install  pip3 install dj_database_url==0.5.0 psycopg2 and freeze requirements  pip freeze > requirements.txt
 - Add  import os and import dj_database_url to settings.py
 - Connect the new database, paste in the ElephantSQL URL (do not commit at this stage):
+
 <img width="816" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/c8b30b4f-764a-46f4-adce-91436c10aeb1">
 
 - Confirm that connection to external database is made , run python3 manage.py showmigrations then run python3 manage.py migrate
 - Create a new superuser for the new database.
 - Create an if else statement to setup development and external databases:
+
 <img width="802" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/a4272ab3-3ef1-4b26-a8f6-68992dec846c">
 
 - Install pip3 install gunicorn and run pip freeze > requirements.txt
 - Create a Procfile in the root directory and include web: gunicorn project_name.wsgi:applications
 - Generate a SECRET_KEY, add it to Heroku config vars section.
 - Create env.py file (ensure it is included in .gitignore file) and add the SECRET_KEY & DATABASE_URL to environment variables:
+
 <img width="349" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/6fcad834-fd44-4e5d-9558-09a11feca66c">
 
 - Edit settings.py to the below:
 <img width="318" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/8562aa1a-dbc6-4170-aa9a-a6eaa75bd512">
+
 <img width="210" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/c7cccb48-389b-4465-a856-83426a9575a9">
+
 <img width="428" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/94085572-300f-424a-99e6-a89f55a14347">
 
 - Add, commit and push to GitHub.
@@ -236,10 +242,13 @@ GitHub/GitPod
 [Uploading image.png…]()
 
 - Add cloudinary to installed apps in settings.py, add static/media file settings:
+
 <img width="258" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/b77e3802-d29b-4a69-a9b0-5b7289f84ebc">
+
 <img width="592" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/918131e6-c105-4b4b-89dd-23ea07ea0ddf">
 
 - Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
+
 <img width="518" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/0d875ffb-f1e1-4437-b124-cc861ad9253a">
 
 <img width="198" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/04f81921-5f60-4801-8cff-1d3ef1a6969f">
