@@ -70,7 +70,7 @@
                     </div>
                     <!-- climb comments count -->
                     <div>
-                        <span>TOTAL CLIMB COMMENTS:</span>
+                        <span>TOTAL CLIMB CONTRIBUTERS:</span>
                         {% with comments.count as total_comments %}
                         <span class="btn-like-comment m-1"><i class="fa-solid fa-comment m-1"></i> {{ total_comments }}</span>
                         {% endwith %}
@@ -93,7 +93,7 @@
     <div class="container">
         <div class="row">
             <div class="card-container col-lg-8 mb-4 mt-3">
-                <h3>Comments:</h3>
+                <h3>Climb Contributions:</h3>
                 <div>
                     <!-- if there is at least one comment -->
                     {% if comments %}
@@ -125,9 +125,9 @@
                     {% endfor %}
                     <!-- else, if there is no comment -->
                     {% else %}
-                    <p>Be the first to share your thoughts!</p>
+                    <p>Be the first to add your climb stats here!</p>
                     {% if not user.is_authenticated %}
-                    <p>To climb a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
+                    <p>To add your own climb stats to this post, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
                         <br> If you
                         have not registered an account, please <a class="link"
                             href="{% url 'account_signup' %}">register</a>
@@ -140,7 +140,7 @@
             <div class="card-container col-lg-4 mb-4 mt-3 ">
                 {% if user.is_authenticated %}
                 <!-- comment form -->
-                <h3>Leave your comment:</h3>
+                <h3>Leave your climb stats here:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post">
                     {{ comment_form | crispy }}
@@ -153,26 +153,3 @@
     </div>
 </div>
 {% endblock content %}
-
-<!-- climb Times -->
-<div>
-    <span>CLIMBS:</span>
-    {% for climb_time in ride_times %}
-    {{climb_time.user }}: {{climb_time.time}}</br>
-    {% if climb_time.user == user %}
-    <button type="edit" class="btn btn-md mt-2">Edit</button>
-    <button type="delete" class="btn btn-delete btn-md mt-2">Delete</button> <br />
-        {% endif %}
-    {% empty %}
-    Sorry, no ride times recorded yet
-    {% endfor %}
-</div>
-
-<!-- edit/delete/add climb time -->
-{% if user.is_authenticated %}
-<button type="add time" class="btn btn-add time btn-md mt-2">Add Time</button> 
-{% endif %}
-
-{% if user.is_authenticated %}
-<a class="btn btn-primary" href="{%url 'add_time' climb.slug %}">Add Ride Time</a>
-{% endif %}

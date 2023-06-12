@@ -123,7 +123,6 @@ class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def get_success_url(self, *args, **kwargs):
         climb_slug = self.object.post.slug
-        # ClimbDetail.comment_deleted = True
         messages.success(self.request, 'Your comment has been deleted.')
         return reverse("climb_detail", kwargs={"slug": climb_slug})
 
