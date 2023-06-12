@@ -215,7 +215,7 @@ Below you will find explanations and screenshots of the intended outcome of the 
 - Build a ranking feature where users can see their ride time for a climb segment according to other users on the same climb.
 - Filter posts according to climb difficulty so that users can find the climbs that may be appropriate for me.
 - Let users favourite/save a climb so that users can easily find ideas for future outings.
-- Build upon the contributions, allowing users to have more statistics about themselves in an online profile.
+- Build upon the contributions, allowing users to have more statistics about themselves in an online profile. This was planned for using a third model however due to time contraints, it was integrated into the comment model to be built upon.
 
 ## DATA MODEL
 - A relational database was designed between climb and comment model with a link to Django user authorisation.
@@ -225,14 +225,14 @@ Below you will find explanations and screenshots of the intended outcome of the 
 - For climb length and elevation gain, this was represented as a decimal field.
 - For KOM and QOM, this was represented by a TimeField
 
-<img width="373" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/cb6f4b2e-0f6e-4a61-a7e9-7131e26c8aa0">
+<img width="383" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/6e96c7df-974e-4bd1-b229-1f5482f5096b">
 
 - [X] C - Site users can create/register an account to interact with the climb posts.
 - [X] R - Site users can open and read the climb posts and read comments from other users.
 - [X] U - Site users can like a post, updating the details and analytics for a post.
 - [X] D - Site users can retract their like if desired on a climb post.
 
-<img width="367" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/573bbdaa-a148-479d-a829-306f01c336bb">
+<img width="376" alt="image" src="https://github.com/SashG91/Off-The-Saddle/assets/97494070/920502f2-ea1e-412b-bf24-3980bbd71040">
 
 - [X] C - Site users can add their contributions/experiences to each climb using a customised form.
 - [X] R - Site users can read comments from other users.
@@ -241,7 +241,7 @@ Below you will find explanations and screenshots of the intended outcome of the 
 
 ## TESTING
 
-Please refer to the (TESTING.md) file for all testing performed.
+Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 
 ## DEPLOYMENT PROCESS
 
