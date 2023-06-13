@@ -156,4 +156,5 @@ Login
 ![image](https://github.com/SashG91/Off-The-Saddle/assets/97494070/28801e3d-0eef-49be-bbc4-cb9a0c80e49d)
 
 ## Defects of Note
-- The RideTime model relation between the comment and climb models was difficult to establish and issues arose with the foreign keys and calling rhe correct ids to save to the database and was thus removed for future features. More time and greater experience would allow for this addition to the site.
+- The RideTime model relation between the comment and climb models was difficult to establish and issues arose with the foreign keys and calling the correct ids to save to the database and was thus removed for future features. More time and greater experience would allow for this addition to the site.
+- There is a defect related the blog post body text is not the same as the body text of the actual site as this comes from an issue through summernote. more time is required to better understand the fault and to explore more solutions.
