@@ -126,7 +126,7 @@ Login
 - Manual testing was done on user stories due to project time constraints.
 
 ## Manual Testing
-- Each completed user story was tested with detailed steps of each feature [here](https://docs.google.com/spreadsheets/d/1iGQ1BSuya_-S_H4ncQ7NwuC3lc1k-G9Twlx2u8B5wZY/edit?usp=sharing). 
+- Each completed user story was tested with detailed steps of each feature [here](https://docs.google.com/spreadsheets/d/1Rij9J7vhQyZK2wohQ0a4HsfalQ55xI3f/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true). 
 - These steps included validation of forms and any unhappy paths that a user might take.
 - The matching user story is documented with the steps taken to fulfil it and a URL is provided for easier reference.
 - You can see the corresponding screenshots of each feature as evidence in the README documentation.
